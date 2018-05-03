@@ -1,0 +1,25 @@
+<view class="container list">
+  <view class="list-item">
+   <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/chest.png" class="left"/>
+  </view>
+
+  <view class="list-item">
+   <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/abdomen.png" class="left"/>
+  </view>
+
+  <view class="list-item">
+   <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/leg.png" class="left"/>
+  </view>
+
+  <view class="list-item">
+   <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/back.png" class="left"/>
+  </view>
+
+  <view class="list-item">
+   <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/shoulder.png" class="left"/>
+  </view>
+
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/classics/arm.png" class="left"/>
+  </view>
+</view>

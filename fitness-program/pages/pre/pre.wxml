@@ -1,0 +1,16 @@
+
+
+ <swiper indicator-dots='true' autoplay='true'>
+  <block>
+    <swiper-item>
+      <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/pre/%E6%B5%B7%E6%8A%A5%E9%A1%B51.png" class="slide-image"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/pre/%E6%B5%B7%E6%8A%A5%E9%A1%B52.png" class="slide-image"/>
+    </swiper-item>
+    <swiper-item>
+      <button catchtap="jumpIndex" class="jump-index">即刻体验</button>
+      <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/pre/%E6%B5%B7%E6%8A%A5%E9%A1%B53.png" class="slide-image"/> 
+    </swiper-item>
+  </block>
+</swiper> 

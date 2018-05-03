@@ -1,0 +1,14 @@
+
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/Hardpull.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/Rowing.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/Highpulldown.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/Pullups.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/Flexorarmpullup.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/back/volume.png"></image>
+</view>
+

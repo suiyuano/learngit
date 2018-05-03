@@ -1,0 +1,12 @@
+{
+  "appDir": "./塑形捷径",
+  "cos": {
+    "appid": "wxf694228b2bbc4758",
+    "backupDir": "./wecos_backup",
+    "bucketname": "test",
+    "folder": "/test", 
+    "region": "cd", 
+    "secret_key": "85qPuGTXQBnQtBKJ7jw8D6mKE4jEXhhX",
+    "secret_id": "AKIDBGBuUKtc1EH9oHnL1Xs1yjIgw3iEbjv1"
+  }
+}

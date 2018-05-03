@@ -1,0 +1,14 @@
+
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/Squat.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/lunge.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/Leglift1.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/legcurl.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/Legflexion.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/leg/Liftheel.png"></image>
+</view>
+

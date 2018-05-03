@@ -1,0 +1,5 @@
+
+<image bindtap="onTapPulleydown" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/oneMinute/Pulleydown.png"></image>
+<image bindtap="onTapBarbellcurl" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/oneMinute/barbellcurl.png"></image>
+<image bindtap="onTapFlexionbrace11" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/oneMinute/Flexionbrace11.png"></image>
+<image bindtap="onTapBending12" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/oneMinute/bending12.png"></image>

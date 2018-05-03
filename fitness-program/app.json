@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/pre/pre",
+    "pages/index/index",
+    "pages/index/leg/leg",
+    "pages/index/chest/chest",
+    "pages/index/back/back",
+    "pages/index/abdomen/abdomen",
+    "pages/index/arm/arm",
+    "pages/index/shoulder/shoulder",
+    "pages/plan/plan",
+    "pages/classics/classics",
+    "pages/oneMinute/oneMinute",
+    "pages/oneMinute-detail/oneMinute-detail",
+    "pages/oneMinute-detail/Pulleydown/Pulleydown",
+    "pages/oneMinute-detail/barbellcurl/barbellcurl",
+    "pages/oneMinute-detail/Flexionbrace11/Flexionbrace11",
+    "pages/oneMinute-detail/bending12/bending12",
+    "pages/tool/tool"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "塑形捷径",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "动作",
+        "iconPath": "/images/action/动作图标【鼠标未点击时】.png",
+        "selectedIconPath": "/images/action/动作图标【鼠标点击后】.png"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "text": "计划",
+        "iconPath": "/images/action/计划图标【鼠标未点击时】.png",
+        "selectedIconPath": "/images/action/计划图标【鼠标点击后】.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "/images/action/工具图标【鼠标未点击时】.png",
+        "selectedIconPath": "/images/action/工具图标【鼠标点击后】.png"
+      }
+    ]
+  }
+}

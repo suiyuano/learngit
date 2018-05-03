@@ -1,0 +1,75 @@
+/* pages/tool/tool.wxss */
+.img-left{
+ /* vertical-align: top;*/
+  width:40rpx;
+  height: 40rpx;
+  margin-left: 10rpx
+}
+.kuai{
+  display: flex;
+  flex-direction: row;
+ /* justify-content: space-between;*/
+  align-items: center;
+  border-bottom: 40rpx solid #eee;
+ /* margin-bottom: 20rpx;
+  margin-top: 20rpx;*/
+  padding: 20rpx 20rpx;
+}
+.kuai-text{
+  margin-left: 10rpx;
+  font-size: 20px
+}
+.img-right{
+ /* vertical-align: top;*/
+  width:40rpx;
+  height: 40rpx;
+  margin-left: 450rpx
+}
+.kuai-end{
+  display: flex;
+  flex-direction: row;
+ /* justify-content: space-between;*/
+  align-items: center;
+ /* border-bottom: 40rpx solid #eee;*/
+ /* margin-bottom: 20rpx;
+  margin-top: 20rpx;*/
+  padding: 20rpx 20rpx;
+}
+.userinfo .userinfo-avatar{
+   width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+.userinfo .userinfo-nickname{
+  display: block;
+  padding: 20rpx 20rpx;
+}
+.userinfo{
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.userinfo .stick-to-days{
+  color: #999;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  padding: 10rpx 6rpx;
+}
+.section{
+  display: flex;
+  flex-direction: row;
+}
+
+/*.stick-to-days{
+  display: flex;
+  flex-direction: row;
+}*/
+.contact-text{
+  display: flex;
+  flex-direction: row;
+  color: #999;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  padding: 10rpx 6rpx;
+  margin-left: 140rpx
+}

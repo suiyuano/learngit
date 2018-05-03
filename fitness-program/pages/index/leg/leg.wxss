@@ -1,0 +1,13 @@
+/* pages/index/leg/leg.wxss */
+
+.row{
+  display: flex;
+  direction: row;
+}
+
+.row image{
+  width: 330rpx;
+  height: 330rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}

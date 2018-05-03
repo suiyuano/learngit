@@ -1,0 +1,11 @@
+
+
+video{
+  width: 100%;
+}
+
+image{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 750rpx;
+}

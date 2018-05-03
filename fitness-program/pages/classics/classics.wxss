@@ -1,0 +1,15 @@
+.list{
+  padding:0px;
+}
+.list-item{
+    border-bottom:1px solid #cccccc;
+    height:150rpx;
+    width:710rpx;
+    display:flex;
+    flex-direction: row;
+    padding:20rpx;
+}
+.left{
+    height:150rpx;
+    width:710rpx;
+}

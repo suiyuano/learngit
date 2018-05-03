@@ -1,0 +1,42 @@
+ <view class="selection">
+  <navigator>
+    <image bindtap="onTapOneMinute" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/oneMinute.png" class="homepage"/>
+  </navigator>
+  </view>
+
+  <view class="selection">
+      <view class="header">
+        <text>精品动作</text>
+      </view>
+      <view class="content">
+        <image bindtap="onTapClassics" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/classics.png" class="content-item"/>
+        <image bindtap="onTapClassics" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/unarmed.png" class="content-item"/>
+      </view>
+      <view class="content">
+        <image bindtap="onTapClassics" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/girl.png" class="content-item"/>
+        <image bindtap="onTapClassics" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/dumbbell.png" class="content-item"/>
+      </view>
+  </view>
+  <view class="selection">
+      <view class="header">
+        <text>部位动作</text>
+      </view>
+      <view class="list-item">
+        <image bindtap="onTapLeg" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/leg.png" class="list-item-images" />
+      </view>
+      <view class="list-item">
+        <image bindtap="onTapBack" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/back.png" class="list-item-images" />
+      </view>
+      <view class="list-item">
+        <image bindtap="onTapChest" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/chest.png" class="list-item-images" />
+      </view>
+      <view class="list-item">
+        <image bindtap="onTapShoulder" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/shoulder.png" class="list-item-images" />
+      </view>    
+      <view class="list-item">
+        <image bindtap="onTapAbdomen" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/abdomen.png" class="list-item-images" />
+      </view>  
+      <view class="list-item">
+        <image bindtap="onTapArm" src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/action/arm.png" class="list-item-images" />
+      </view>
+  </view>

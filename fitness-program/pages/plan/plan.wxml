@@ -1,0 +1,50 @@
+
+<view class="selection">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/customized.png" class="homepage"/>
+</view>
+
+<view class="selection">
+  <view class="header">
+    <text>精品计划</text>
+  </view>
+
+  <view class="content">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/novice.png" class="content-item"/>
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/veteran.png" class="content-item"/>
+  </view>
+
+  <view class="content">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/girl.png" class="content-item"/>
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/boy.png" class="content-item"/>
+  </view>
+</view>
+
+<view class="selection">
+  <view class="header">
+    <text>部位计划</text>
+  </view>
+
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/leg.png" class="list-item-images" />
+  </view>
+
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/back.png" class="list-item-images" />
+  </view>
+
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/chest.png" class="list-item-images" />
+  </view>
+
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/shoulder.png" class="list-item-images" />
+  </view>
+      
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/abdomen.png" class="list-item-images" />
+  </view>
+      
+  <view class="list-item">
+    <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/plan/arm.png" class="list-item-images" />
+  </view>
+</view>

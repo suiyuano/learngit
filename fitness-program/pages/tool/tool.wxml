@@ -1,0 +1,38 @@
+<view class='kuai'>
+ <view class="userinfo">
+    <!--button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button-->
+    <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view >
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class='section'>
+       <text class='stick-to-days'>我已经坚持0天</text>
+       <navigator bindtap='contact'>
+        <text class='contact-text'>联系我们</text>
+       </navigator>
+      </view>
+      <!--button bindtap='contact'>
+       <text>联系我们</text>
+      </button-->
+    </view>
+  </view>
+</view>
+<navigator class='kuai'>
+ <image class='img-left' src='../../images/action/question.png'></image>
+ <text class='kuai-text'>你问我答</text>
+ <image class='img-right' src='../../images/action/箭头.png'></image> 
+</navigator>
+<navigator class='kuai'>
+ <image class='img-left' src='../../images/action/实时记录.png'></image>
+ <text class='kuai-text'>实时记录</text>
+ <image class='img-right' src='../../images/action/箭头.png'></image> 
+</navigator>
+<navigator class='kuai'>
+ <image class='img-left' src='../../images/action/训练调整.png'></image>
+ <text class='kuai-text'>训练调整</text>
+ <image class='img-right' src='../../images/action/箭头.png'></image> 
+</navigator>
+<navigator class='kuai-end'>
+ <image class='img-left' src='../../images/action/饮食调整.png'></image>
+ <text class='kuai-text'>饮食调整</text>
+ <image class='img-right' src='../../images/action/箭头.png'></image> 
+</navigator>

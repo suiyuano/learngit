@@ -1,0 +1,26 @@
+/* pages/pre/pre.wxss */
+
+swiper{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height:100%;
+}
+
+swiper image{
+  width: 100%;
+  height:100%;
+  z-index: -1;
+}
+
+.jump-index{
+  z-index: 100;
+  width: 200rpx;
+  height: 90rpx;
+  position: absolute;
+  margin-top: 1000rpx;
+  left: 50%;
+  margin-left: -100rpx;
+  opacity: 0.6;
+}

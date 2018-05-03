@@ -1,0 +1,14 @@
+
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/MilitaryPress.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/SeatedDumbbellPress.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/Straightinfront.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/Lateralraises.png"></image>
+</view>
+<view class="row">
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/Pulling.png"></image>
+  <image src="https://demo-1252769696.cos.ap-chengdu.myqcloud.com/images/index-PartialAction/shoulder/Reversebird.png"></image>
+</view>
+
