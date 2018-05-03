@@ -9,6 +9,9 @@
 .section{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 20rpx;
+  align-items: center
 }
 
 .section-text{
