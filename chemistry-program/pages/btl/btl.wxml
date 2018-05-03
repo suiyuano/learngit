@@ -1,5 +1,8 @@
 <!--pages/btl/btl.wxml-->
-<image class='img' src='../images/6.png'></image>
+<view >
+ <image class='img' src='../images/6.png'></image>
+</view>
+
 <!--view class='section'>
  <navigator url='../original/original'>
   <text class='section-text'>原创活动
@@ -15,7 +18,7 @@
 </view-->
  <!--view>上面这种写法并不能达到预期的三个按钮横排显示的效果</view-->
 
-<view class='section'>
+<!--view class='section'>
  <navigator url='../original/original'>
   <text class='section-text'>原创活动 
   </text>
@@ -28,8 +31,26 @@
   <text class='section-text'>夏令营
   </text>
  </navigator>
-</view>
+</view-->
 <!--view>上面这种写法也是错的，它告诉我们用navigator标签组件是不能实现多个按钮放在同一行的！</view-->
 <!--view>上面这一行是假的！上面的写法明明完成了把三个按钮放在同一横排的效果！！！</view-->
-
-
+<!--view>上面的想法是可以的，但是一点都不美观，所以我改变主意啦哈哈哈</view-->
+<view class='section'>
+<navigator class='kuai'>
+ <image class='img-left' src='../images/chemistry.png'></image>
+ <text class='kuai-text'>原创活动</text>
+</navigator>
+<navigator class='kuai'>
+ <image class='img-left' src='../images/outline.png'></image>
+ <text class='kuai-text'>外包</text>
+</navigator>
+<navigator class='kuai'>
+ <image class='img-left' src='../images/summer.png'></image>
+ <text class='kuai-text'>夏令营</text>
+</navigator>
+</view>
+<!--navigator class='kuai-end'>
+ <image class='img-left' src='../../images/action/饮食调整.png'></image>
+ <text class='kuai-text'>饮食调整</text>
+ <image class='img-right' src='../../images/action/箭头.png'></image> 
+</navigator-->
