@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/btl/btl",
+    "pages/contact/contact",
+    "pages/pay/pay",
+    "pages/original/original",
+    "pages/outline/outline",
+    "pages/summercamp/summercamp"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "创意化学",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "list": [
+      {
+        "text": "精品视频",
+        "iconPath": "pages/images/2.png",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "pages/images/2.png"
+      },
+      {
+        "text": "线下活动",
+        "iconPath": "pages/images/3.png",
+        "pagePath": "pages/btl/btl",
+        "selectedIconPath": "pages/images/3.png"
+      },
+      {
+        "text": "联系我们",
+        "iconPath": "pages/images/4.png",
+        "pagePath": "pages/contact/contact",
+        "selectedIconPath": "pages/images/4.png"
+      }
+    ]
+  }
+}

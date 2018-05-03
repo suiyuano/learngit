@@ -1,0 +1,35 @@
+<!--pages/btl/btl.wxml-->
+<image class='img' src='../images/6.png'></image>
+<!--view class='section'>
+ <navigator url='../original/original'>
+  <text class='section-text'>原创活动
+   <navigator url='../outline/outline'>
+    <text class='section-text'>外包
+     <navigator url='../summercamp/summercamp'>
+      <text class='section-text'>夏令营</text>
+     </navigator>
+    </text>
+   </navigator>
+  </text>
+ </navigator>
+</view-->
+ <!--view>上面这种写法并不能达到预期的三个按钮横排显示的效果</view-->
+
+<view class='section'>
+ <navigator url='../original/original'>
+  <text class='section-text'>原创活动 
+  </text>
+ </navigator>
+ <navigator url='../outline/outline'>
+  <text class='section-text'>外包
+  </text>
+ </navigator>
+ <navigator url='../summercamp/summercamp'>
+  <text class='section-text'>夏令营
+  </text>
+ </navigator>
+</view>
+<!--view>上面这种写法也是错的，它告诉我们用navigator标签组件是不能实现多个按钮放在同一行的！</view-->
+<!--view>上面这一行是假的！上面的写法明明完成了把三个按钮放在同一横排的效果！！！</view-->
+
+

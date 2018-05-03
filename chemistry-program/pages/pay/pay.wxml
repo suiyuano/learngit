@@ -1,0 +1,7 @@
+  <!--image class='img' src='../images/1.png'></image-->
+<image class='img' mode='aspectFill'  src='../images/1.png'></image>
+<view class='page-header'>
+  <text class='page-header-text'>截图并扫码就可以购买自己想要的产品啦！
+    <text class='zhushi'>温馨提示：请在购买前确保已经了解了相关产品了哦^_^</text>
+  </text>
+</view>

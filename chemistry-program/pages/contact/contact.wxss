@@ -1,0 +1,83 @@
+/* pages/contact/contact.wxss */
+.page-header{
+  display: flex;
+  /*横向左对齐*/
+  justify-content: left;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 10rpx;
+
+  /* 纵向排列*/
+ /* flex-direction: column; */
+
+}
+.page-header-text{
+  padding: 40rpx 60rpx;
+  color: #000;
+  font-size: 50rpx;
+  text-align: left; 
+}
+.img{
+  clear: both;
+  display: block;
+  margin: auto;
+ /* margin-top: 100rpx */
+}
+.zhushi{
+  font-size: 26rpx;
+  color: #999
+}
+.content{
+   display: flex;
+   flex-direction: column;
+  /*横向左对齐*/
+   text-align: left;
+   line-height: 60rpx;
+   font-size: 36rpx;
+   color: #666;
+   padding: 40rpx 60rpx;
+}
+
+/* 
+.content-text{
+   text-align: left; 
+   font-size: 36rpx;
+   color: #000;
+}
+*/
+.img-left{
+ /* vertical-align: top;*/
+  width:60rpx;
+  height: 60rpx;
+  margin-left: 10rpx
+}
+.kuai{
+  display: flex;
+  flex-direction: row;
+ /* justify-content: space-between;*/
+  align-items: center;
+ /* border-bottom: 2rpx solid #eee;*/
+ /* margin-bottom: 20rpx;
+  margin-top: 20rpx;*/
+  padding: 20rpx 20rpx;
+}
+.kuai-text{
+  margin-left: 10rpx;
+  font-size: 15px;
+  color: #666
+}
+.img-right{
+  
+  width:80rpx;
+  height: 60rpx;
+  margin-left: 10rpx
+}
+.kuai-end{
+  display: flex;
+  flex-direction: row;
+ /* justify-content: space-between;*/
+  align-items: center;
+ /* border-bottom: 40rpx solid #eee;*/
+ /* margin-bottom: 20rpx;
+  margin-top: 20rpx;*/
+  padding: 20rpx 20rpx;
+}

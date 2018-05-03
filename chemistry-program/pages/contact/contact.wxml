@@ -1,0 +1,43 @@
+<!--pages/contact/contact.wxml-->
+<!--image class='poster' style="width: 200px; height: 100px; " mode='scaleToFill' src='../images/5.png'></image-->
+<image class='img' src='../images/5.png'></image>
+<view class='page-header'>
+  <text class='page-header-text'>创意化学
+    <text class='zhushi'>带你去看不一样的化学世界</text>
+  </text>
+     <!--text class='zhushi'>带你去看不一样的化学世界</text-->
+</view>
+<!--view class='content'>
+  <text class='content-text'>Phone: 13076061715
+   <text class='content-text'>微信: c1623763735
+    <text class='content-text'>QQ: 1623763735
+    </text>
+   </text>
+  </text>
+  <navigator url='../pay/pay'>
+    <text>点我购买！
+    </text>
+   </navigator>
+</view>
+<view-->
+  
+<view class='kuai'>
+ <image class='img-left' src='../images/10.png'></image>
+ <text class='kuai-text'>Phone: 13076061715</text>
+ <!--image class='img-right' src='../../images/action/箭头.png'></image--> 
+</view>
+<view class='kuai'>
+ <image class='img-right' src='../images/7.png'></image>
+ <text class='kuai-text'>微信: c1623763735</text>
+ <!--image class='img-right' src='../../images/action/箭头.png'></image--> 
+</view>
+<view class='kuai'>
+ <image class='img-left' src='../images/9.png'></image>
+ <text class='kuai-text'>QQ: 1623763735</text>
+ <!--image class='img-right' src='../../images/action/箭头.png'></image--> 
+</view>
+<navigator class='kuai-end' url='../pay/pay'>
+ <image class='img-left' src='../images/10.png'></image>
+ <text class='kuai-text'>点我购买！</text>
+ <!--image class='img-right' src='../../images/action/箭头.png'></image--> 
+</navigator>

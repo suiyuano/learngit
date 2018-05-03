@@ -1,0 +1,17 @@
+/* pages/btl/btl.wxss */
+.img{
+  clear: both;
+  display: block;
+  margin: auto;
+ /* margin-top: 100rpx */
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-text{
+  display: flex;
+  flex-direction: row;
+}

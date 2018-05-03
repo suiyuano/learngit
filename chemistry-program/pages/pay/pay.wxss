@@ -1,0 +1,27 @@
+.img{
+  height: 900rpx;
+  width: 750rpx;
+  align-items: center
+}
+
+.page-header{
+  display: flex;
+  /*横向左对齐*/
+  justify-content: center;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 10rpx;
+
+  /* 纵向排列*/
+ /* flex-direction: column; */
+
+}
+.page-header-text{
+  padding: 40rpx 60rpx;
+  color: #000;
+  font-size: 40rpx;
+  text-align: center; 
+}
+.zhushi{
+  font-size: 35rpx;
+  color: #999
+}
