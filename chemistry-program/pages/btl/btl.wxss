@@ -1,10 +1,12 @@
-/* pages/btl/btl.wxss */
 .img{
-  clear: both;
+   clear: both;
   display: block;
   margin: auto;
+  height: 200px;
+  width: 250px
+
  /* margin-top: 100rpx */
- /* border-bottom: 10rpx solid #eee;*/
+ /* border-bottom: 10rpx solid #eee*/
 }
 /*
 .section{
@@ -20,20 +22,23 @@
   flex-direction: row;
 }
 */
+/*
 .img-left{
- /* vertical-align: top;*/
+  vertical-align: top;
   width:120rpx;
   height: 120rpx;
   margin-left: 10rpx
 }
+*/
+/*
 .kuai{
   display: flex;
   flex-direction: column;
- /* justify-content: space-between;*/
+
   align-items: center;
- /* border-bottom: 4rpx solid #eee;*/
- /* margin-bottom: 20rpx;
-  margin-top: 20rpx;*/
+
+
+  margin-top: 20rpx;
   padding: 20rpx 20rpx;
   
 }
@@ -41,24 +46,26 @@
   margin-left: 40rpx;
   font-size: 20px
 }
-
+*/
 
 .section{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+ /* justify-content: space-between;
   align-items: center;
   padding: 10rpx,10rpx;
-  margin-top: 80rpx
+  margin-top: 80rpx*/
 }
-
-
-.contact-text{
-  display: flex;
-  flex-direction: row;
+.kuai-img{
+  padding: 20rpx 20rpx;
+  width: 300px;
+  height: 130rpx;
+  margin-left: 40rpx;
+  border-bottom: 10rpx solid #eee
+}
+.zhushi{
+  margin-left: 60rpx;
+  font-size: 26rpx;
   color: #999;
-  font-size: 30rpx;
-  margin-top: 10rpx;
-  padding: 10rpx 6rpx;
-  margin-left: 140rpx
+  align-items: center
 }
