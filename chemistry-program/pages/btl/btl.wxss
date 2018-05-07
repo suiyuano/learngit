@@ -2,8 +2,9 @@
    clear: both;
   display: block;
   margin: auto;
-  height: 200px;
-  width: 250px
+  margin-top: 2rpx;
+ /* height: 200px;
+  width: 250px*/
 
  /* margin-top: 100rpx */
  /* border-bottom: 10rpx solid #eee*/
@@ -55,13 +56,16 @@
   align-items: center;
   padding: 10rpx,10rpx;
   margin-top: 80rpx*/
+  align-items: center
+  
 }
 .kuai-img{
-  padding: 20rpx 20rpx;
-  width: 300px;
+  padding: 10rpx;
+  width:700rpx;
   height: 130rpx;
-  margin-left: 40rpx;
-  border-bottom: 10rpx solid #eee
+ /* margin-left: 40rpx;*/
+ /* border-bottom: 2rpx solid #fff;*/
+  
 }
 .zhushi{
   margin-left: 60rpx;

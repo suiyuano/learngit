@@ -20,8 +20,8 @@
   clear: both;
   display: block;
   margin: auto;
-  width: 300px;
-  height: 200px
+ /* width: 250px;
+  height: 200px*/
  /* margin-top: 100rpx */
 }
 .zhushi{

@@ -53,14 +53,14 @@
 <!--view>暂时舍弃上面的一种布局，重新考虑</view-->
 
 <view class='section'>
- <navigator class='kaui'>
-  <image class='kuai-img' src='../images/原创活动.png'></image>
+ <navigator >
+  <image class='kuai-img' src='../images/333.png'></image>
  </navigator>
- <navigator class='kaui'>
-  <image  class='kuai-img' src='../images/夏令营。。.png'></image>
+ <navigator >
+  <image  class='kuai-img' src='../images/222.png'></image>
  </navigator>
- <navigator class='kaui'>
-  <image class='kuai-img' src='../images/外包课堂.png'></image>
+ <navigator >
+  <image class='kuai-img' src='../images/111.png'></image>
  </navigator>
 </view>
 
