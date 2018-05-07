@@ -21,7 +21,7 @@
  <text class='kuai-text'>你问我答</text>
  <image class='img-right' src='../../images/action/箭头.png'></image> 
 </navigator>
-<navigator class='kuai'>
+<navigator class='kuai' url='../record/record'>
  <image class='img-left' src='../../images/action/实时记录.png'></image>
  <text class='kuai-text'>实时记录</text>
  <image class='img-right' src='../../images/action/箭头.png'></image> 

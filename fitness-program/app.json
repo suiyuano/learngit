@@ -16,7 +16,8 @@
     "pages/oneMinute-detail/barbellcurl/barbellcurl",
     "pages/oneMinute-detail/Flexionbrace11/Flexionbrace11",
     "pages/oneMinute-detail/bending12/bending12",
-    "pages/tool/tool"
+    "pages/tool/tool",
+    "pages/record/record"
   ],
   "window":{
     "backgroundTextStyle":"light",

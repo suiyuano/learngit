@@ -1,0 +1,33 @@
+<view class='title'>
+ <text>动作选择</text>
+</view>
+
+<view class='choice'>
+ <text class='choice-text'>请先选择今天要练的部位</text>
+ <view class='first-line'>
+  <button>腿部</button>
+  <button>背部</button>
+  <button>胸部</button>
+ </view>
+ <view class='second-line'>
+  <button>肩部</button>
+  <button>腹部</button>
+  <button>手臂</button>
+ </view>
+ <text class='choice-text'>请继续选择现在要练的动作</text>
+ <view class='third-line'>
+  <button>{{first_section}}</button>
+  <button>{{second_section}}</button>
+  <button>{{third_section}}</button>
+ </view>
+ <view class='fourth-line'>
+  <button>{{fourth_section}}</button>
+  <button>{{fifth_section}}</button>
+  <button>{{sixth_section}}</button>
+ </view>
+ <view class='fifth-line'>
+  <button>{{seventh_section}}</button>
+  <button>{{eighth_section}}</button>
+  <button>{{ninth_section}}</button>
+ </view>
+</view>
