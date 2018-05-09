@@ -70,6 +70,19 @@ Page({
   onShareAppMessage: function () {
     
   },
+  tuibu: function () {
+    this.setData({
+      first_section: '深蹲',
+      second_section: '箭步蹲',
+      third_section: '腿举',
+      fourth_section: '腿屈伸',
+      fifth_section: '腿弯举',
+      sixth_section: '提踵',
+      seventh_section: '相扑硬拉',
+      eighth_section: '臀推',
+      ninth_section: '直腿硬拉',
+    })
+  },
   beibu: function() {
     this.setData({
       first_section:'硬拉',
@@ -135,5 +148,16 @@ Page({
       ninth_section:'滑轮转体',
     })
   },
+  navigate_to_part_action_page: function() {
+    wx.navigateTo({
+      url: './part_action/part_action',
+     // success: function(res){
+       // this.setData(
+       //   part:
+       // )
+     // }
+    })
+
+  }
 
 })

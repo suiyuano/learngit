@@ -17,7 +17,8 @@
     "pages/oneMinute-detail/Flexionbrace11/Flexionbrace11",
     "pages/oneMinute-detail/bending12/bending12",
     "pages/tool/tool",
-    "pages/record/record"
+    "pages/record/record",
+    "pages/record/part_action/part_action"
   ],
   "window":{
     "backgroundTextStyle":"light",

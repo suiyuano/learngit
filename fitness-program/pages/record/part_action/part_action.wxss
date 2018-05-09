@@ -1,0 +1,23 @@
+/* pages/record/part_action/part_action.wxss */
+.title{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #ddd
+}
+.title .title-button{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  margin-bottom: 20rpx
+}
+.information{
+  display: flex;
+  flex-direction: column;
+}
+.information .infor-text{
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}

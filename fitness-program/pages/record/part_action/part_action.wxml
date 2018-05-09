@@ -1,0 +1,14 @@
+<view class='title'>
+ <text>组间休息倒计时</text>
+ <view class='title-button'>
+  <button size='mini'>45秒</button>
+  <button size='mini'>60秒</button>
+  <button size='mini'>90秒</button>
+  <button size='mini'>120秒</button>
+ </view>
+</view>
+
+<view class='information'>
+ <text class='infor-text'>部位：腿</text>
+ <text class='infor-text'>动作：深蹲</text>
+</view>
