@@ -21,3 +21,76 @@
   margin-top: 10rpx;
   padding-top: 10rpx;
 }
+.weight{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.weight .content{
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}
+.weight .weight-text{
+  border-bottom: 2rpx solid #ddd;
+  padding-left: 60rpx
+}
+.cishu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cishu .content{
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}
+.cishu .cishu-text{
+  border-bottom: 2rpx solid #ddd;
+  padding-left: 60rpx
+}
+.beizhu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.beizhu .content{
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}
+.beizhu .beizhu-text{
+  border-bottom: 2rpx solid #ddd;
+  padding-left: 60rpx
+}
+.special-skill{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #ddd
+}
+.special-skill .skill-button{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  margin-bottom: 20rpx;
+  justify-content: center;
+}
+.record{
+  display: flex;
+  flex-direction: column;
+}
+.record .record-text{
+   margin-left: 40rpx;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}
+.record .record-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #ddd;
+   padding-top: 10rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,4 +1,5 @@
-<view class='title'>
+<scroll-view scroll-y='true'>
+ <view class='title'>
  <text>组间休息倒计时</text>
  <view class='title-button'>
   <button size='mini'>45秒</button>
@@ -11,4 +12,38 @@
 <view class='information'>
  <text class='infor-text'>部位：腿</text>
  <text class='infor-text'>动作：深蹲</text>
+ <text class='infor-text'>第二组</text>
+ <view class='weight'>
+  <text class='content'>重量/kg</text>
+  <input placeholder='0代表自重' auto-focus class='weight-text'></input>
+ </view>
+ <view class='cishu'>
+  <text class='content'>次数</text>
+  <input placeholder='请输入次数' auto-focus class='cishu-text'></input>
+ </view>
+ <view class='beizhu'>
+  <text class='content'>备注</text>
+  <input placeholder='请输入备注' auto-focus class='beizhu-text'></input>
+ </view>
 </view>
+
+<view class='special-skill'>
+ <text>若采用特殊训练技巧请在下方选择</text>
+ <view class='skill-button'>
+  <button size='mini'>超级组</button>
+  <button size='mini'>递减组</button>
+  <button size='mini'>固定次数最短时间完成</button>
+ </view>
+</view>
+
+<view class='record'>
+ <text class='record-text'>本次训练记录</text>
+ <view class='record-content'>
+  <text>第一组</text>
+  <text>10kg*10次</text>
+  <text >休息：45秒</text>
+ </view>
+</view>
+
+
+</scroll-view>
