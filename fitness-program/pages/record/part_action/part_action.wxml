@@ -36,14 +36,37 @@
  </view>
 </view>
 
-<view class='record'>
- <text class='record-text'>本次训练记录</text>
- <view class='record-content'>
-  <text>第一组</text>
-  <text>10kg*10次</text>
-  <text >休息：45秒</text>
+<view class='recordthis'>
+ <text class='recordthis-text'>本次训练记录</text>
+ <view class='recordthis-content'>
+  <text class='left'>第1组</text>
+  <text class='center'>10kg*10次</text>
+  <text class='right'>休息：45秒</text>
  </view>
 </view>
 
+<view class='record'>
+ <text class='record-text'>上次训练记录</text>
+ <view class='record-content'>
+  <text class='left'>第1组</text>
+  <text class='center'>10kg*10次</text>
+  <text class='right'>休息：45秒</text>
+ </view>
+ <view class='record-content'>
+  <text class='left'>第2组</text>
+  <text class='center'>10kg*10次</text>
+  <text class='right'>休息：45秒</text>
+ </view>
+ <view class='record-content'>
+  <text class='left'>第3组</text>
+  <text class='center'>10kg*10次</text>
+  <text class='right'>休息：45秒</text>
+ </view>
+ <view class='record-content'>
+  <text class='left'>第4组</text>
+  <text class='center'>10kg*10次</text>
+  <text class='right'>休息：45秒</text>
+ </view>
+</view>
 
 </scroll-view>
