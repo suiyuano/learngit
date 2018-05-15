@@ -18,7 +18,8 @@
     "pages/oneMinute-detail/bending12/bending12",
     "pages/tool/tool",
     "pages/record/record",
-    "pages/record/part_action/part_action"
+    "pages/record/part_action/part_action",
+    "pages/question/question"
   ],
   "window":{
     "backgroundTextStyle":"light",

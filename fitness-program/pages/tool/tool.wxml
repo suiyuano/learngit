@@ -16,7 +16,7 @@
     </view>
   </view>
 </view>
-<navigator class='kuai'>
+<navigator class='kuai' url='../question/question'>
  <image class='img-left' src='../../images/action/question.png'></image>
  <text class='kuai-text'>你问我答</text>
  <image class='img-right' src='../../images/action/箭头.png'></image> 
