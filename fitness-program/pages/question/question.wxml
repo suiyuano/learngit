@@ -5,5 +5,27 @@
    <text class='text-right'>查看全部</text>
    <image  class='img' src='../../images/action/箭头.png'></image> 
   </navigator>
+  <scroll-view scroll-x='true' class='content' style='white-space: nowrap;display:flex'>
+   <view class='kuai' style='width: 240px; height: 140px;display:inline-block'>
+    <image class='kuai-img' src='../../images/海报1.png'></image>
+    <text class='kuai-text'>何时达到超量恢复的峰值？超量恢复与过度训练最主要</text>
+    <text class='kuai-text'>的区别在哪里？如何避免错过超量恢复的峰值？</text>
+   </view>
+   <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
+    <image class='kuai-img' src='../../images/海报1.png'></image>
+    <text class='kuai-text'>组间歇的时间选择有哪些依据？组间歇的时间</text>
+    <text class='kuai-text'>应如何控制？组间歇时应该做些什么？</text>
+   </view>
+   <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
+    <image class='kuai-img' src='../../images/海报1.png'></image>
+    <text class='kuai-text'>同步式呼吸应何时使用？非同步式呼吸应何时</text>
+    <text class='kuai-text'>使用？自由调节式呼吸应何时使用？</text>
+   </view>
+   <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
+    <image class='kuai-img' src='../../images/海报1.png'></image>
+    <text class='kuai-text'>如何感受目标肌群的正确发力？哪些特殊训练技巧有</text>
+    <text class='kuai-text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text>
+   </view>
+  </scroll-view>
  </view>
 </view>

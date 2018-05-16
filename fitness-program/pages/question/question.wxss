@@ -11,6 +11,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+ /* align-items: baseline;*/
+ padding-top: 20rpx;
   
 }
 .img{
@@ -27,4 +29,27 @@
   padding-left: 450rpx;
   font-size: 15px;
   color: #ddd;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 3000rpx;
+  overflow: scroll; 
+}
+.kuai{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  width: 240rpx;
+  height: 500rpx;
+}
+.kuai-img{
+  height: 240rpx;
+  width: 480rpx;
+  padding-top: 10rpx
+}
+.kuai-text{
+  font-size: 20rpx;
+  color: #ccc;
+  padding-top: 10rpx
 }
