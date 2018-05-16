@@ -1,1 +1,9 @@
-<view>question page</view>
+<view class='page'>
+ <view class='block'>
+  <navigator class='navigator'>
+   <text class='text-left'>训练</text>
+   <text class='text-right'>查看全部</text>
+   <image  class='img' src='../../images/action/箭头.png'></image> 
+  </navigator>
+ </view>
+</view>

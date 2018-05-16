@@ -1,1 +1,30 @@
 /* pages/question/question.wxss */
+.page{
+  display: flex;
+  flex-direction: column
+}
+.block{
+  display: flex;
+  flex-direction: column
+}
+.navigator{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.img{
+  width:40rpx;
+  height: 40rpx;
+  margin-left: 10rpx
+}
+.text-left{
+  padding-left: 20rpx;
+  font-size: 25px;
+  color: #000
+}
+.text-right{
+  padding-left: 450rpx;
+  font-size: 15px;
+  color: #ddd;
+}
