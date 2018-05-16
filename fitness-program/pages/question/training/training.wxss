@@ -1,0 +1,21 @@
+/* pages/question/training/training.wxss */
+.img{
+width: 680rpx;
+height: 250rpx;
+padding-left: 36rpx
+}
+.page{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-size: 26rpx;
+  color: #aaa;
+  text-align: center;
+  
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx
+}

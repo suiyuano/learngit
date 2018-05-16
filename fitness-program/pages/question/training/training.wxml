@@ -1,0 +1,43 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>何时达到超量恢复的峰值？超量恢复与过度训练最</text>
+  </view>
+  <view class='text'>
+    <text class='text'>主要的区别在哪里？如何避免错过超量恢复的峰值？</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>组间歇的时间选择有哪些依据？组间歇的时间</text>
+  </view>
+  <view class='text'>
+    <text class='text'>应如何控制？组间歇时应该做些什么？</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>同步式呼吸应何时使用？非同步式呼吸应何时</text>
+  </view>
+  <view class='text'>
+    <text class='text'>使用？自由调节式呼吸应何时使用？</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>如何感受目标肌群的正确发力？哪些特殊训练技巧有</text>
+  </view>
+  <view class='text'>
+    <text class='text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text>
+  </view>
+ </navigator>
+
+</scroll-view>

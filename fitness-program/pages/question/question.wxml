@@ -1,6 +1,6 @@
 <view class='page'>
  <view class='block'>
-  <navigator class='navigator'>
+  <navigator class='navigator' url='./training/training'>
    <text class='text-left'>训练</text>
    <text class='text-right'>查看全部</text>
    <image  class='img' src='../../images/action/箭头.png'></image> 
@@ -38,7 +38,7 @@
  </view>
  
  <view class='block'>
-  <navigator class='navigator'>
+  <navigator class='navigator' url='./diet/diet'>
    <text class='text-left'>饮食</text>
    <text class='text-right'>查看全部</text>
    <image  class='img' src='../../images/action/箭头.png'></image> 
@@ -47,37 +47,37 @@
    <view class='kuai' style='width: 240px; height: 160px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>何时达到超量恢复的峰值？超量恢复与过度训练最主要</text>
-      <text class='kuai-text'>的区别在哪里？如何避免错过超量恢复的峰值？</text>
+      <text class='kuai-text'>初学者饮食有哪些常见的误区？</text>
+      <!--text class='kuai-text'>的区别在哪里？如何避免错过超量恢复的峰值？</text-->
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 140px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>组间歇的时间选择有哪些依据？组间歇的时间</text>
-      <text class='kuai-text'>应如何控制？组间歇时应该做些什么？</text>
+      <text class='kuai-text'>什么是“暴食日”？什么是“欺骗餐”？</text>
+      <!--text class='kuai-text'>应如何控制？组间歇时应该做些什么？</text-->
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>同步式呼吸应何时使用？非同步式呼吸应何时</text>
-      <text class='kuai-text'>使用？自由调节式呼吸应何时使用？</text>
+      <text class='kuai-text'>与男性相比，脂肪摄取应相对较多，</text>
+      <text class='kuai-text'>碳水化合物摄入相对较少。</text>
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>如何感受目标肌群的正确发力？哪些特殊训练技巧有</text>
-      <text class='kuai-text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text>
+      <text class='kuai-text'>为什么肥胖人群相对来说不易出现饱腹感？</text>
+      <text class='kuai-text'>如何调整饮食来控制食欲？</text>
     </view>
    </view>
   </scroll-view>
  </view>
 
 <view class='block'>
-  <navigator class='navigator'>
-   <text class='text-left'>其他</text>
+  <navigator class='navigator' url='./diet/diet'>
+   <text class='text-left'>其他 </text>
    <text class='text-right'>查看全部</text>
    <image  class='img' src='../../images/action/箭头.png'></image> 
   </navigator>
@@ -85,29 +85,29 @@
    <view class='kuai' style='width: 240px; height: 160px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>何时达到超量恢复的峰值？超量恢复与过度训练最主要</text>
-      <text class='kuai-text'>的区别在哪里？如何避免错过超量恢复的峰值？</text>
+      <text class='kuai-text'>肌肉量对腹肌形态有何影响？</text>
+      <text class='kuai-text'>腹肌的形态真的是天生的吗？</text>
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 140px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>组间歇的时间选择有哪些依据？组间歇的时间</text>
-      <text class='kuai-text'>应如何控制？组间歇时应该做些什么？</text>
+      <text class='kuai-text'>保证良好的行走体态的三个要点</text>
+      <!--text class='kuai-text'>应如何控制？组间歇时应该做些什么？</text-->
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>同步式呼吸应何时使用？非同步式呼吸应何时</text>
-      <text class='kuai-text'>使用？自由调节式呼吸应何时使用？</text>
+      <text class='kuai-text'>从皮质醇角度分析吸烟对健身的正面影响</text>
+      <!--text class='kuai-text'>使用？自由调节式呼吸应何时使用？</text-->
     </view>
    </view>
    <view class='kuai' style='width: 240px; height: 120px;display:inline-block'>
     <view class='kuai-kuai'>
       <image class='kuai-img' src='../../images/海报1.png'></image>
-      <text class='kuai-text'>如何感受目标肌群的正确发力？哪些特殊训练技巧有</text>
-      <text class='kuai-text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text>
+      <text class='kuai-text'>圈手法评估骨架大小；计算公式评估骨架大小。</text>
+      <!--text class='kuai-text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text-->
     </view>
    </view>
   </scroll-view>

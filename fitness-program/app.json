@@ -19,7 +19,10 @@
     "pages/tool/tool",
     "pages/record/record",
     "pages/record/part_action/part_action",
-    "pages/question/question"
+    "pages/question/question",
+    "pages/question/diet/diet",
+    "pages/question/training/training",
+    "pages/question/others/others"
   ],
   "window":{
     "backgroundTextStyle":"light",
