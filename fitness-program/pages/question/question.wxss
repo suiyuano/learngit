@@ -1,11 +1,13 @@
 /* pages/question/question.wxss */
 .page{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  
 }
 .block{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  border-bottom: 2rpx solid #ddd
 }
 .navigator{
   display: flex;
@@ -33,7 +35,7 @@
 .content{
   display: flex;
   flex-direction: row;
-  width: 3000rpx;
+  width: 2100rpx;
   overflow: scroll; 
 }
 .kuai{
@@ -41,15 +43,19 @@
   flex-direction: column;
   padding-left: 20rpx;
   width: 240rpx;
-  height: 500rpx;
+  height: 520rpx;
 }
 .kuai-img{
-  height: 240rpx;
-  width: 480rpx;
+  height: 200rpx;
+  width: 460rpx;
   padding-top: 10rpx
 }
 .kuai-text{
   font-size: 20rpx;
-  color: #ccc;
-  padding-top: 10rpx
+  color: #AAA;
+  padding-top: 6rpx
+}
+.kuai-kuai{
+  display: flex;
+  flex-direction: column
 }
