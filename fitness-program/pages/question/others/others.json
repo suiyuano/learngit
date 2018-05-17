@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "其他问答",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

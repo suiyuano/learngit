@@ -1,0 +1,43 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>初学者饮食有哪些常见的误区？</text>
+  </view>
+  <!--view class='text'>
+    <text class='text'>主要的区别在哪里？如何避免错过超量恢复的峰值？</text>
+  </view-->
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>什么是“暴食日”？</text>
+  </view>
+  <view class='text'>
+    <text class='text'>什么是“欺骗餐”？</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>与男性相比，脂肪摄取应相对较多，</text>
+  </view>
+  <view class='text'>
+    <text class='text'>碳水化合物摄入相对较少。</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>为什么肥胖人群相对来说不易出现饱腹感？</text>
+  </view>
+  <view class='text'>
+    <text class='text'>如何调整饮食来控制食欲？</text>
+  </view>
+ </navigator>
+
+</scroll-view>

@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "饮食问答",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

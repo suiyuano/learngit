@@ -1,0 +1,43 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>肌肉量对腹肌形态有何影响？</text>
+  </view>
+  <view class='text'>
+    <text class='text'>腹肌的形态真的是天生的吗？</text>
+  </view>
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>保证良好的行走体态的三个要点</text>
+  </view>
+  <!--view class='text'>
+    <text class='text'>应如何控制？组间歇时应该做些什么？</text>
+  </view-->
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>从皮质醇角度分析吸烟对健身的正面影响</text>
+  </view>
+  <!--view class='text'>
+    <text class='text'>使用？自由调节式呼吸应何时使用？</text>
+  </view-->
+ </navigator>
+
+ <navigator class='block'>
+  <image src='../../../images/海报1.png' class='img'></image>
+  <view class='text'>
+    <text class='text'>圈手法评估骨架大小；计算公式评估骨架大小。</text>
+  </view>
+  <!--view class='text'>
+    <text class='text'>助于掌握动作要领？肌力训练动作有哪些共性要点？</text>
+  </view-->
+ </navigator>
+
+</scroll-view>
