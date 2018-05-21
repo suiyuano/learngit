@@ -35,15 +35,15 @@
 .content{
   display: flex;
   flex-direction: row;
-  width: 2100rpx;
+  width: 760rpx;
   overflow: scroll; 
 }
 .kuai{
   display: flex;
   flex-direction: column;
   padding-left: 20rpx;
-  width: 240rpx;
-  height: 520rpx;
+ /* width: 240rpx;
+  height: 520rpx;*/
 }
 .kuai-img{
   height: 200rpx;
@@ -59,3 +59,10 @@
   display: flex;
   flex-direction: column
 }
+
+
+
+
+
+
+/*width: 240px; height: 160px;*/

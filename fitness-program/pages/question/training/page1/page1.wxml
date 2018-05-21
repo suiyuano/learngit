@@ -1,0 +1,8 @@
+<scroll-view scroll-y='true' class='page'>
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+ <view class='content'>
+  
+ </view>
+</scroll-view>

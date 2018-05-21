@@ -22,7 +22,11 @@
     "pages/question/question",
     "pages/question/diet/diet",
     "pages/question/training/training",
-    "pages/question/others/others"
+    "pages/question/others/others",
+    "pages/question/training/page1/page1",
+    "pages/question/training/page2/page2",
+    "pages/question/training/page3/page3",
+    "pages/question/training/page4/page4"
   ],
   "window":{
     "backgroundTextStyle":"light",

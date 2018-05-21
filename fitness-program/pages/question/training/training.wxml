@@ -1,6 +1,6 @@
 <scroll-view scroll-y='true' class='page'>
 
- <navigator class='block'>
+ <navigator class='block' url='./page1/page1'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>何时达到超量恢复的峰值？超量恢复与过度训练最</text>
@@ -10,7 +10,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page2/page2'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>组间歇的时间选择有哪些依据？组间歇的时间</text>
@@ -20,7 +20,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page3/page3'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>同步式呼吸应何时使用？非同步式呼吸应何时</text>
@@ -30,7 +30,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page4/page4'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>如何感受目标肌群的正确发力？哪些特殊训练技巧有</text>

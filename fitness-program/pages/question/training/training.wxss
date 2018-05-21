@@ -11,7 +11,8 @@ padding-left: 36rpx
 .text{
   font-size: 26rpx;
   color: #aaa;
-  text-align: center;
+  padding-left: 36rpx;
+ /* text-align: center;*/
   
 }
 .block{
