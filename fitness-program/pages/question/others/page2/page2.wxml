@@ -1,0 +1,27 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍一、常见驼背人群与纠正技巧</text>
+  <text class='text'>常见的驼背人群为习惯于大步快走的四肢较长的高个人群。</text>
+  <text class='text'>可以尝试减少步长，增大步频来避免身体重心经常性靠前。</text>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍二、行走时避免臀部后撅的特殊技巧</text>
+  <text class='text'>过分注重挺胸收腹，常会不自觉地出现臀部后撅的现象，久而久之还有可能造成腰肌劳损。可以尝试脚尖着地发力，继而使大腿后侧肌肉紧绷，同时髋部向前至骨盆中立位，此时意念集中于臀部肌肉的紧缩上。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍三、保证良好的行走体态的三个要点</text>
+  <text class='text'>1.肩胛骨内收下沉。</text>
+  <text class='text'>2.腰腹部收紧。</text>
+  <text class='text'>3.下颌的垂直线始终为重心线。</text>
+ </view>
+
+</scroll-view>

@@ -27,3 +27,8 @@ padding-top: 10rpx
    display: flex;
    flex-direction: column;
 }
+.text-title{
+  font-size: 30rpx;
+  color: #000;
+  padding-top: 20rpx;
+}

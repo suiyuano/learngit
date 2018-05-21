@@ -1,0 +1,22 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍一、膳食的注意要点</text>
+  <text class='text'>增加粗纤维「蔬菜和粗粮是纤维的主要食物来源」的摄入，因为纤维摄入不足是经常存在饥饿感的原因之一；同时增大饮水量，饮水量不足是经常存在饥饿感的原因之一。</text>
+  <text class='text'>此外，可以通过增加每口饭的咀嚼次数来放慢进食速度，还可以调整进食顺序「先蔬菜水果，后汤水，最后肉和主食」。</text>
+  <text class='text'>最后，餐前摄入坚果有助于刺激促胆囊收缩素分泌，提前向大脑发出吃饱信号，并减慢胃部排空速度。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍二、为什么肥胖人群相对来说不易出现饱腹感</text>
+  <text class='text'>胃肠肌肽和胃饥饿素是控制食欲的两种荷尔蒙类型，肥胖者的胃肠肌肽始终维持在较低水平[故难有饱腹感]。而肥胖者一天内的胃饥饿素虽然处于同一中等水平，但若节食即会升高。</text>
+  <text class='text'>除了上述的膳食调整技巧，中等强度以上、持续时间超过30分钟的运动可以让机体消化和吸收能力受到抑制。出于降低食欲的目的，此外还可以在早起后空腹摄入100mg左旋肉碱补剂，间隔8-12小时后再随餐服用100mg。</text>
+ </view>
+
+</scroll-view>

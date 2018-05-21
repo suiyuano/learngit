@@ -1,4 +1,5 @@
-/* pages/question/training/page3/page3.wxss */
+/* pages/question/others/page1/page1.wxss */
+/* pages/question/training/page1/page1.wxss */
 .img{
 width: 680rpx;
 height: 250rpx;

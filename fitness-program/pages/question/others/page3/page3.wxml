@@ -1,0 +1,21 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍一、从皮质醇角度分析吸烟对健身的影响</text>
+  <text class='text'>由于训练时往往是一个人一天中皮质醇「皮质醇水平高，会导致肌肉流失和顽固性脂肪在体内的储存增加」分泌最旺盛的时段，所以健身爱好者，尤其是一天多练的健身爱好者，皮质醇水平往往高于常人。</text>
+  <text class='text'>而吸烟使人感到放松，在一定程度上反而会降低体内皮质醇的水平，因此健身者不必戒烟。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍二、训练过程中应戒烟</text>
+  <text class='text'>在训练过程中吸烟会影响训练效果。因为抽烟使你体内摄入过多的一氧化碳，这将阻止肌肉对氧气的吸收和利用，氧气稀少时，肌肉对氧气的利用减少，这将直接导致肌肉的爆发力下降以及健身效果的减弱。</text>
+  <text class='text'>此外健身对吸烟具有反作用，即能从生理上减低对抽烟的依赖性。</text>
+ </view>
+
+</scroll-view>

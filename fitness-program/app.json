@@ -26,7 +26,15 @@
     "pages/question/training/page1/page1",
     "pages/question/training/page2/page2",
     "pages/question/training/page3/page3",
-    "pages/question/training/page4/page4"
+    "pages/question/training/page4/page4",
+    "pages/question/diet/page1/page1",
+    "pages/question/diet/page2/page2",
+    "pages/question/diet/page3/page3",
+    "pages/question/diet/page4/page4",
+    "pages/question/others/page1/page1",
+    "pages/question/others/page2/page2",
+    "pages/question/others/page3/page3",
+    "pages/question/others/page4/page4"
   ],
   "window":{
     "backgroundTextStyle":"light",

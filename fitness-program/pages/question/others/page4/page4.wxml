@@ -1,0 +1,24 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍一、圈手法评估骨架大小</text>
+  <text class='text'>用大拇指和中指，圈住另一只手的手腕，也就是骨头凸起处的上面，手腕折痕最明显的那个地方。</text>
+  <text class='text'>大骨架：两只手指头没办法相碰；中骨架：两只手指头刚刚好相碰；小骨架：两只手指头相迭超过一个指甲宽。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍二、计算公式评估骨架大小</text>
+  <text class='text'>R值=身高/手腕围【R值越小，代表骨架越大】。</text>
+  <text class='text'>& 男生R值：小于9.6→大骨架/9.6～10.4→中骨架/大于10.4→小骨架。</text>
+  <text class='text'>& 女生R值：小于9.9→大骨架/9.9～10.9→中骨架/大于10.9→小骨架。</text>
+  <text class='text'>问：骨架大的人体重就会比较重吗？</text>
+  <text class='text'>答：骨头占了人体约1/5～1/10的重量，因此骨架大的人确实会比骨架小的人稍重一点(约2～4公斤)。</text>
+ </view>
+
+</scroll-view>

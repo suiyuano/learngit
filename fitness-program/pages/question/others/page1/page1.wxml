@@ -1,0 +1,29 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text-title'>▍一、不应完全相信体脂测试仪</text>
+  <text class='text'>毕竟健身房的体质测试仪很可能是私教卖课的一种手段。比较靠谱的方式是用皮脂夹测量腹部和肩峰位置的赘肉厚度，如果两者均小于1cm，一般来讲表明体脂低于15%。</text>
+  <text class='text-title'>▍二、腹肌的形态是天生的</text>
+  <text class='text'>腹在，即便体脂降到10%，往往也只会显现出4块腹肌。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍三、肌肉量对腹肌形态的影响</text>
+  <text class='text'>体脂率对腹肌形态的影响程度会受到肌肉量的干扰，即若腹肌的维度较大，即便体脂高于15%，也可能显现出腹肌的形态。</text>
+  <text class='text'>因此，体脂率低是腹肌清晰的前提条件，但腹肌形态还会受到其他多方面因素的影响。如果追求分离度高的腹肌形态，除了保持15%以下的体脂，还需要重视强化腹肌，尤其是腹外斜肌的维度。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text-title'>▍四、一些人体脂率不低，但视觉上为何精瘦</text>
+  <text class='text'>一般为下列三种因素的影响结果：肌肉量大；肌肉处于发力/充血状态；脂肪的分布形态（一定的体脂在不同人身上的呈现不同，一些训练者腿部脂肪分布较多，反而腹部相对较少）。</text>
+ </view>
+
+</scroll-view>

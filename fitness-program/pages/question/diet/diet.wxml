@@ -1,6 +1,6 @@
 <scroll-view scroll-y='true' class='page'>
 
- <navigator class='block'>
+ <navigator class='block' url='./page1/page1'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>初学者饮食有哪些常见的误区？</text>
@@ -10,7 +10,7 @@
   </view-->
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page2/page2'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>什么是“暴食日”？</text>
@@ -20,7 +20,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page3/page3'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>与男性相比，脂肪摄取应相对较多，</text>
@@ -30,7 +30,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page4/page4'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>为什么肥胖人群相对来说不易出现饱腹感？</text>

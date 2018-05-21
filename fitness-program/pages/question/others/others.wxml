@@ -1,6 +1,6 @@
 <scroll-view scroll-y='true' class='page'>
 
- <navigator class='block'>
+ <navigator class='block' url='./page1/page1'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>肌肉量对腹肌形态有何影响？</text>
@@ -10,7 +10,7 @@
   </view>
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page2/page2'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>保证良好的行走体态的三个要点</text>
@@ -20,7 +20,7 @@
   </view-->
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page3/page3'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>从皮质醇角度分析吸烟对健身的正面影响</text>
@@ -30,7 +30,7 @@
   </view-->
  </navigator>
 
- <navigator class='block'>
+ <navigator class='block' url='./page4/page4'>
   <image src='../../../images/海报1.png' class='img'></image>
   <view class='text'>
     <text class='text'>圈手法评估骨架大小；计算公式评估骨架大小。</text>
