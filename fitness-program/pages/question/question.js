@@ -61,5 +61,65 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+  training_1: function(){
+    wx.navigateTo({
+      url: './training/page1/page1',
+    })
+  },
+  training_2: function () {
+    wx.navigateTo({
+      url: './training/page2/page2',
+    })
+  },
+  training_3: function () {
+    wx.navigateTo({
+      url: './training/page3/page3',
+    })
+  },
+  training_4: function () {
+    wx.navigateTo({
+      url: './training/page4/page4',
+    })
+  },
+  diet_1: function () {
+    wx.navigateTo({
+      url: './diet/page1/page1',
+    })
+  },
+  diet_2: function () {
+    wx.navigateTo({
+      url: './diet/page2/page2',
+    })
+  },
+  diet_3: function () {
+    wx.navigateTo({
+      url: './diet/page3/page3',
+    })
+  },
+  diet_4: function () {
+    wx.navigateTo({
+      url: './diet/page4/page4',
+    })
+  },
+  others_1: function () {
+    wx.navigateTo({
+      url: './others/page1/page1',
+    })
+  },
+  others_2: function () {
+    wx.navigateTo({
+      url: './others/page2/page2',
+    })
+  },
+  others_3: function () {
+    wx.navigateTo({
+      url: './others/page3/page3',
+    })
+  },
+  others_4: function () {
+    wx.navigateTo({
+      url: './others/page4/page4',
+    })
+  },
 })
