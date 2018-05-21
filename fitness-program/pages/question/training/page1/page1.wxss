@@ -12,6 +12,7 @@ padding-top: 10rpx
 .text{
   font-size: 26rpx;
   color: #aaa;
+  padding-top: 20rpx;
  /* text-align: center;*/
   
 }
@@ -19,4 +20,10 @@ padding-top: 10rpx
   display: flex;
   flex-direction: column;
   padding-top: 20rpx
+}
+.content{
+   padding-left: 36rpx;
+   padding-right: 36rpx;
+   display: flex;
+   flex-direction: column;
 }

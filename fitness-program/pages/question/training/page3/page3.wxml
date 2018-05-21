@@ -1,0 +1,33 @@
+<scroll-view scroll-y='true' class='page'>
+
+ <view>
+  <image src='../../../../images/海报1.png' class='img'></image>
+ </view>
+
+ <view class='content'>
+  <text class='text'>▍一、同步式呼吸应何时使用</text>
+  <text class='text'>同步式呼吸是指每做一次动作进行一次呼吸，呼吸是在动作过程中完成的，分为两种形式。</text>
+  <text class='text'>第一种形式为肌肉收缩时瞬间闭气并快呼气，肌肉伸展时慢吸气。一般在负荷较重、仰卧位做动作或须固定肩带和胸腹部时采用这种呼吸方式，是最常见的呼吸方式，顶峰收缩前快吐气有助于更好地收缩肌肉。闭气时间一定要短暂，呼气为喷吐式。</text>
+  <text class='text'>第二种形式恰好相反，在肌肉收缩时快吸气，肌肉伸展时慢呼气。一般在负荷较
+轻及退让性练习时采用，意念绝对集中是这个呼吸方式的关键。
+</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text'>▍二、非同步式呼吸应何时使用</text>
+  <text class='text'>非同步式呼吸是指呼吸频率与动作次数不相等，呼吸是在动作间歇时进行的，有两种常见形式。</text>
+  <text class='text'>第一种形式为连续做几次动作后暂停做一次呼吸，再连续做几次动作后再做一次呼吸。此方式常见于训练的热身阶段，或俯卧撑、双杠臂屈伸等动作。</text>
+  <text class='text'>第二种形式为在一次动作间歇时进行几次呼吸。即在超大重量负荷(极限的90%以上)或身体接近疲劳时，调整一下呼吸，以便再努力完成一次动作练习，常见于深蹲等动作。</text>
+ </view>
+
+ <image src='../../../../images/海报1.png' class='img'></image>
+
+ <view class='content'>
+  <text class='text'>▍三、自由调节式呼吸应何时使用</text>
+  <text class='text'>常见于低强度训练，或有氧训练中。训练时的呼吸方式应随动作而变。正确的呼吸不仅要起到“给氧”的作用，而且能固定肩带，起到调整体位和协助完成动作的重要作用。</text>
+  <text class='text'>一般情况下离心过程中吸气且吸气量较大，而向心过程中快速呼气。若是大重量训练时，憋气是不可避免的，应选择在向心过程的前半程憋气，接近顶峰收缩位置时快速吐气。深蹲硬拉等侧重下半身动作适合腹式呼吸，卧推等针对上半身动作适合胸式呼吸。</text>
+ </view>
+
+</scroll-view>

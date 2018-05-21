@@ -1,1 +1,29 @@
 /* pages/question/training/page2/page2.wxss */
+.img{
+width: 680rpx;
+height: 250rpx;
+padding-left: 36rpx;
+padding-top: 10rpx
+}
+.page{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-size: 26rpx;
+  color: #aaa;
+  padding-top: 20rpx;
+ /* text-align: center;*/
+  
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx
+}
+.content{
+   padding-left: 36rpx;
+   padding-right: 36rpx;
+   display: flex;
+   flex-direction: column;
+}
