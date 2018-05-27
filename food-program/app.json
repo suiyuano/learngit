@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/report/report"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "美食记",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "list": [
+      {
+        "text": "食迹",
+        "iconPath": "img/4.png",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "img/3.png"
+      },
+      {
+        "text": "美食报告",
+        "iconPath": "img/2.png",
+        "pagePath": "pages/report/report",
+        "selectedIconPath": "img/1.png"
+      }
+    ]
+  }
+}
