@@ -1,5 +1,31 @@
 <view style='height:100%' >
-  <view style='background-image:url({{URL}})' class='background' mode='aspectFit'>
-   where is my image
+  <view style='background-image:url({{URL}})' class='background' >
+    <view class='content'>
+      <view class='block'>
+        <text>这段时间里</text>
+        <text>你一共吃过5种美食</text>
+      </view>
+      <view class='block'>
+        <text>在5月31日大概是很特别的一天</text>
+        <text>你略微奢侈地吃了一顿大餐</text>
+      </view>
+      <view class='block'>
+        <text>4月6号这一天你回家很晚</text>
+        <text>晚上10点还沉浸在美食的世界中</text>
+      </view>
+      <view class='block'>
+        <text>你偏爱：鱼香肉丝</text>
+        <text>期间一共吃过6次</text>
+      </view>
+      <view class='block'>
+        <text>分享给好友</text>
+        <text>交流一下吃货的心得！</text>
+      </view>
+      
+    </view>
+
   </view>
+
 </view>
+<image class='button' src='../../img/share.png' bindtap='share'></image>
+
