@@ -12,4 +12,15 @@
   </view>
 </view-->
 
+<view class='head'> 
+ <view class='userinfo'>
+  <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+ </view>
+ <text class='head-text'>最近一周留下美食记忆：</text>
+ <text class='data'>{{number}}</text>
+</view>
+<view>
+ <map style='width:100%'></map>
+</view>
+
 
