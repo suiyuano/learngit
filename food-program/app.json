@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/report/report"
+    "pages/report/report",
+    "pages/share/share"
   ],
   "window":{
     "backgroundTextStyle":"light",

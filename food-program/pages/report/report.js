@@ -61,11 +61,26 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '我的美食报告',
+      path: '/pages/report/report'
+    }
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    wx.updateShareMenu({
+      withShareTicket: true,
+      success() {
+      }
+    })
   },
-  share:function(){
+  share: function() {
     wx.navigateTo({
-      url: '../index/index',
+      url: '../share/share',
     })
   }
 })
