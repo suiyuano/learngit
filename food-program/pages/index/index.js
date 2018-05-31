@@ -6,15 +6,34 @@ Page({
   data: {
     number:0,
     userInfo: {},
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    latitude: 23.099994,
+    longitude: 113.324520,
+    markers: [{
+      id: 1,
+      
+    }],
+    covers: [{
+     
+    }, {
+      
+    }]
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  
+  regionchange(e) {
+    console.log(e.type)
   },
+  markertap(e) {
+    console.log(e.markerId)
+  },
+  controltap(e) {
+    console.log(e.controlId)
+  },
+
+
+  
   onLoad: function () {
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -66,6 +85,56 @@ Page({
       withShareTicket: true,
       success() {
       }
+    })
+  },
+
+  onReady: function (e) {
+    this.mapCtx = wx.createMapContext('myMap');
+    this.mapCtx.moveToLocation();
+    this.mapCtx.getCenterLocation({
+      success: function (res) {
+        console.log(res.longitude)
+        console.log(res.latitude)
+      }
+    })
+  },
+  getCenterLocation: function () {
+    this.mapCtx.getCenterLocation({
+      success: function (res) {
+        console.log(res.longitude)
+        console.log(res.latitude)
+      }
+    })
+  },
+  translateMarker: function () {
+    this.mapCtx.translateMarker({
+      markerId: 1,
+      autoRotate: true,
+      duration: 1000,
+      destination: {
+        latitude: 23.10229,
+        longitude: 113.3345211,
+      },
+      animationEnd() {
+        console.log('animation end')
+      }
+    })
+  },
+  includePoints: function () {
+    this.mapCtx.includePoints({
+      padding: [10],
+      points: [{
+        latitude: 23.10229,
+        longitude: 113.3345211,
+      }, {
+        latitude: 23.00229,
+        longitude: 113.3345211,
+      }]
+    })
+  },
+  navigateto_upload: function() {
+    wx.navigateTo({
+      url: '../upload/upload',
     })
   }
 })
