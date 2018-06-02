@@ -95,16 +95,69 @@ Page({
       success: function (res) {
         console.log(res.longitude)
         console.log(res.latitude)
+        
       }
     })
   },
   getCenterLocation: function () {
+    type: 'wgs84',
     this.mapCtx.getCenterLocation({
       success: function (res) {
         console.log(res.longitude)
         console.log(res.latitude)
+
+        var getAddressUrl = "https://apis.map.qq.com/ws/geocoder/v1/?location=" + res.latitude + "," + res.longitude + "&key=O44BZ-DLB6P-A3FDW-VAYGQ-HVPG5-MRBBX&get_poi=1";
+       wx.request({
+         url: getAddressUrl,
+         success: function(ops){
+           console.log(JSON.stringify(ops))
+           wx.showModal({
+             title: '您当前的位置：',
+             
+             content: ops.data.result.address,
+           })
+         }
+         
+       })
+
+        /*var QQMapWX = require('../..//qqmap-wx-jssdk.js');
+
+        // 实例化API核心类
+        var demo = new QQMapWX({
+          key: 'O44BZ-DLB6P-A3FDW-VAYGQ-HVPG5-MRBBX' // 必填
+        });
+
+        // 调用接口
+        demo.reverseGeocoder({
+          location: {
+            latitude: res.longitude,
+            longitude: res.latitude
+          },
+          success: function (res) {
+            console.log(res);
+          },
+          fail: function (res) {
+            console.log(res);
+          },
+          complete: function (res) {
+            console.log(res);
+          }
+        })*/
+        
+        /*var latitude = res.latitude
+        var longitude = res.longitude
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })*/
       }
     })
+   /* wx.request({
+      url: 'http://map.qq.com/api/js?v=2.exp',
+      success: function(){
+              }
+    })*/
   },
   translateMarker: function () {
     this.mapCtx.translateMarker({
