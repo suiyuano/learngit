@@ -9,7 +9,7 @@
 }
 page{
   height: 83%;
-   background-color: #FF7F50
+   /*background-color: #FF7F50*/
 }
 
 .button{
@@ -29,4 +29,26 @@ page{
   display: flex;
   flex-direction: column;
   padding-top: 20rpx;
+ 
+}
+.page-body-button {
+  margin-bottom: 30rpx;
+ margin: 20rpx 20rpx
+}
+/*@import "../../weui.wxss";*/
+.picker{
+    padding: 20rpx;
+    background-color: #FFFFFF;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx
+}
+.section_title{
+  margin-left: 20rpx
+}
+.start_and_enddata{
+  display: flex;
+  flex-direction: row
 }

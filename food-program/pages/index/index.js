@@ -93,32 +93,42 @@ Page({
     this.mapCtx.moveToLocation();
     this.mapCtx.getCenterLocation({
       success: function (res) {
-        console.log(res.longitude)
-        console.log(res.latitude)
-        
+        console.log(res.longitude+'一')
+        console.log(res.latitude+'一')
       }
     })
   },
-  getCenterLocation: function () {
+  getnowLocation: function () {
+    this.mapCtx = wx.createMapContext('myMap');
+    this.mapCtx.moveToLocation();
     type: 'wgs84',
     this.mapCtx.getCenterLocation({
       success: function (res) {
-        console.log(res.longitude)
-        console.log(res.latitude)
-
+        console.log(res.longitude+'二')
+        console.log(res.latitude+'二')
         var getAddressUrl = "https://apis.map.qq.com/ws/geocoder/v1/?location=" + res.latitude + "," + res.longitude + "&key=O44BZ-DLB6P-A3FDW-VAYGQ-HVPG5-MRBBX&get_poi=1";
-       wx.request({
-         url: getAddressUrl,
-         success: function(ops){
-           console.log(JSON.stringify(ops))
-           wx.showModal({
-             title: '您当前的位置：',
-             
-             content: ops.data.result.address,
-           })
-         }
-         
-       })
+        wx.request({
+          url: getAddressUrl,
+          success: function (ops) {
+            console.log(JSON.stringify(ops))
+            wx.showModal({
+              title: '您当前的位置：',
+
+              content: ops.data.result.address,
+            })
+          }
+
+        })
+      }
+    });
+    
+ 
+    this.mapCtx.getCenterLocation({
+      success: function (res) {
+        console.log(res.longitude+'三')
+        console.log(res.latitude+'三')
+
+       
 
         /*var QQMapWX = require('../..//qqmap-wx-jssdk.js');
 
