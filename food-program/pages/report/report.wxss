@@ -39,6 +39,9 @@ page{
 .picker{
     padding: 20rpx;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #FF4500
 }
 .section{
   display: flex;
@@ -51,4 +54,7 @@ page{
 .start_and_enddata{
   display: flex;
   flex-direction: row
+}
+.oringe{
+  color: #FF4500
 }

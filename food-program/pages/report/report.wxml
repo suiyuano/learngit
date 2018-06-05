@@ -36,12 +36,14 @@
     <view class='start_and_enddata'>
       <picker mode="date" value="{{date}}"start="2015-09-01"end="2020-09-01"bindchange="bindstartDateChange">
       <view class="picker">
-        从: {{startdate}}
+        <text class='oringe'>从：</text>
+         {{startdate}}
       </view>
       </picker>
       <picker mode="date" value="{{date}}"start="2015-09-01"end="2020-09-01"bindchange="bindendDateChange">
       <view class="picker">
-        到: {{enddate}}
+        <text class='oringe'>到：</text>
+        {{enddate}}
       </view>
     </picker>
     </view>

@@ -1,6 +1,27 @@
 //app.js
 App({
   onLaunch: function () {
+    //登陆API
+    wx.login({
+      success: function (res) {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http:// 118.25.214.51:8080/api/login',
+            data: {
+              code: res.code
+            },
+            success: function (result) {
+              console.log(result)
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    });
+  
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

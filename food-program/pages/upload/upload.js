@@ -1,65 +1,65 @@
+var util = require('../../utils/util.js')
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+
+    x1: 1,
+
+    y1: 2
+
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+
+
+  // 请求接口
+
+  submit: function () {
+
+    util.showBusy('请求中...')
+
+    var self = this
+
+    wx.request({
+
+      url: 'http://localhost:8080/hello', // 接口地址
+
+      data: self.data,
+
+      header: {
+
+        'content-type': 'application/json' // 默认值
+
+      },
+
+      success: function (res) {
+
+        console.log(res.data)
+
+        util.showSuccess('请求成功完成')
+
+        self.setData({
+
+          requestResult: JSON.stringify(res.data)
+
+        })
+
+      }
+
+    })
+
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
+  studentIdInput: function (e) {
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
+    this.setData({
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
+      studentId: e.detail.value
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
+    })
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
   }
-})
+
+});

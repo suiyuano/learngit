@@ -120,6 +120,8 @@ Page({
 
         })
       }
+
+
     });
     
  
@@ -168,6 +170,12 @@ Page({
       success: function(){
               }
     })*/
+    wx.request({
+      url: 'http:// 118.25.214.51:8080/api/login',
+      success: function(result){
+        console.log(result.user_id)
+      }
+    })
   },
   translateMarker: function () {
     this.mapCtx.translateMarker({
