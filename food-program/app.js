@@ -1,18 +1,23 @@
 //app.js
 App({
+  
   onLaunch: function () {
     //登陆API
+   /* var that=this
     wx.login({
       success: function (res) {
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'http:// 118.25.214.51:8080/api/login',
+            url: 'http://118.25.214.51:8080/api/login',
+            method: 'GET',
             data: {
               code: res.code
             },
             success: function (result) {
-              console.log(result)
+              console.log(result.data.openid)
+              that.globalData.user_id=result.data.openid
+              console.log(that.globalData.user_id)
             }
           })
         } else {
@@ -20,7 +25,7 @@ App({
         }
       }
     });
-  
+  */
 
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -55,6 +60,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    user_id:null
   }
 })

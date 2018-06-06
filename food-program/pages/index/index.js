@@ -4,19 +4,17 @@ const app = getApp()
 
 Page({
   data: {
-    number:0,
+    user_id:null,
+    count:1,
     userInfo: {},
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     latitude: 23.099994,
     longitude: 113.324520,
     markers: [{
       id: 1,
-      
     }],
     covers: [{
-     
     }, {
-      
     }]
   },
   
@@ -33,6 +31,66 @@ Page({
 
   
   onLoad: function () {
+    var that=this
+    wx.login({
+      
+      success: function (res) {
+        var here=that
+       // console.log(here.data.user_id)
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http://118.25.214.51:8080/api/login',
+            method: 'GET',
+            data: {
+              code: res.code
+            },
+            
+            success: function (result) {
+              
+             // console.log(result.data.openid+'hhhhhhhhh')
+             // console.log(here.data.user_id)
+              here.setData({
+                user_id: result.data.openid
+              }) 
+             // console.log(here.data.user_id)
+              wx.request({
+                url: 'http://118.25.214.51:8080/api/postcount',
+                data: {
+                  user_id: here.data.user_id
+                },
+                success: function (result) {
+                  //console.log(result.data.count);
+                  var data = result.data;
+                  //console.log(data);
+                  that.setData({
+                    count: data.count
+                  });
+
+                }
+              })
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    });
+   /* wx.request({
+      url: 'http://118.25.214.51:8080/api/postcount',
+      data:{
+        user_id:app.globalData.user_id
+      },
+      success: function(result){
+        //console.log(result.data.count);
+        var data=result.data;
+        //console.log(data);
+        that.setData({
+          count: data.count
+        });
+       
+      }
+    })*/
 
     if (app.globalData.userInfo) {
       this.setData({
@@ -69,6 +127,7 @@ Page({
       hasUserInfo: true
     })
   },
+ 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
@@ -169,13 +228,13 @@ Page({
       url: 'http://map.qq.com/api/js?v=2.exp',
       success: function(){
               }
-    })*/
+    })
     wx.request({
       url: 'http:// 118.25.214.51:8080/api/login',
       success: function(result){
         console.log(result.user_id)
       }
-    })
+    })*/
   },
   translateMarker: function () {
     this.mapCtx.translateMarker({

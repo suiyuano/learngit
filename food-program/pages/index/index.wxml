@@ -17,7 +17,7 @@
   <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
  </view>
  <text class='head-text'>最近一周留下美食记忆：</text>
- <text class='data'>{{number}}</text>
+ <text class='data'>{{count}}</text>
 </view>
 <view class="page-body">
   <view class="page-section page-section-gap">
