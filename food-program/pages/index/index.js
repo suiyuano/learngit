@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    address:null,
     user_id:null,
     count:1,
     userInfo: {},
@@ -148,16 +149,24 @@ Page({
   },
 
   onReady: function (e) {
+    var that=this
     this.mapCtx = wx.createMapContext('myMap');
     this.mapCtx.moveToLocation();
     this.mapCtx.getCenterLocation({
+      
       success: function (res) {
         console.log(res.longitude+'一')
         console.log(res.latitude+'一')
+        that.setData({
+          longitude: res.longitude,
+          latitude: res.latitude
+        })
       }
     })
   },
+
   getnowLocation: function () {
+    var that=this
     this.mapCtx = wx.createMapContext('myMap');
     this.mapCtx.moveToLocation();
     type: 'wgs84',
@@ -169,10 +178,13 @@ Page({
         wx.request({
           url: getAddressUrl,
           success: function (ops) {
-            console.log(JSON.stringify(ops))
+            //console.log(JSON.stringify(ops))
+            that.setData({
+              address: ops.data.result.address
+            })
+            console.log(that.data.address)
             wx.showModal({
               title: '您当前的位置：',
-
               content: ops.data.result.address,
             })
           }
@@ -264,7 +276,7 @@ Page({
   },
   navigateto_upload: function() {
     wx.navigateTo({
-      url: '../upload/upload',
+      url: '../upload/upload'+"?address="+this.data.address
     })
   }
 })

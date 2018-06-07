@@ -1,65 +1,100 @@
-var util = require('../../utils/util.js')
-
 Page({
 
+  /**
+   * 页面的初始数据
+   */
   data: {
-
-    x1: 1,
-
-    y1: 2
-
-  },
-
-
-
-  // 请求接口
-
-  submit: function () {
-
-    util.showBusy('请求中...')
-
-    var self = this
-
-    wx.request({
-
-      url: 'http://localhost:8080/hello', // 接口地址
-
-      data: self.data,
-
-      header: {
-
-        'content-type': 'application/json' // 默认值
-
+    address:0,
+    array: ['冒菜', '火锅', '串串', '烧烤'],
+    objectArray: [
+      {
+        id: 0,
+        name: '冒菜'
       },
-
-      success: function (res) {
-
-        console.log(res.data)
-
-        util.showSuccess('请求成功完成')
-
-        self.setData({
-
-          requestResult: JSON.stringify(res.data)
-
-        })
-
+      {
+        id: 1,
+        name: '火锅'
+      },
+      {
+        id: 2,
+        name: '串串'
+      },
+      {
+        id: 3,
+        name: '烧烤'
       }
-
+    ]
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
     })
-
+  },
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+  formReset: function () {
+    console.log('form发生了reset事件')
   },
 
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+   console.log(options.address)
+   this.setData({
+     address: options.address
+   })
+  },
 
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+   
+  },
 
-  studentIdInput: function (e) {
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
+  },
 
-    this.setData({
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
+  },
 
-      studentId: e.detail.value
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
 
-    })
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
 
-  }
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
 
-});
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  },
+ 
+})

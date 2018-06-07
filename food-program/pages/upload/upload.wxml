@@ -1,89 +1,29 @@
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
-
-    <view class="page__hd">
-
-        <view class="page__title">Input</view>
-
-        <view class="page__desc">表单输入</view>
-
+<view class='page'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="block">
+      <input name="input" placeholder="这一份美食的价格..." />
+    </view>
+    <view>
+      <image src='../../img/addimg.png' class='addimg'></image>
     </view>
 
-    <view class="page__bd">
 
-        <view class="weui-cells__title">学号</view>
-
-        <view class="weui-cells weui-cells_after-title">
-
-            <view class="weui-cell weui-cell_input">
-
-                <view class="weui-cell__bd">
-
-                    <input class="weui-input" maxlength="13" type='number' placeholder="请输入学号" bindinput='studentIdInput'/>
-
-                </view>
-
-            </view>
-
+    <view class="section">
+      <view class="section__title">选择这次的美食类型：</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[index]}}
         </view>
-
-
-
-        <view class="weui-cells__title">本节课意见</view>
-
-        <view class="weui-cells weui-cells_after-title">
-
-            <view class="weui-cell">
-
-                <view class="weui-cell__bd">
-
-                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
-
-                    <view class="weui-textarea-counter">{{currentCount}}/100</view>
-
-                </view>
-
-            </view>
-
-        </view>
-
-
-
-        <checkbox-group bindchange="bindAgreeChange">
-
-            <label class="weui-agree" for="weuiAgree">
-
-                <view class="weui-agree__text">
-
-                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
-
-                    <view class="weui-agree__checkbox-icon">
-
-                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
-
-                    </view>
-
-                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
-
-                </view>
-
-            </label>
-
-        </checkbox-group>
-
-
-
-        <view class="weui-btn-area">
-
-            <button class="weui-btn" type="primary" bindtap="submit">确定</button>
-
-        </view>
-
-        <view class="list-item" wx:if="{{requestResult}}">
-
-            <text class="request-text">{{'请求结果：' + requestResult}}</text>
-
-        </view>
-
+      </picker>
     </view>
 
+
+    <view class='kuai'>
+      <image class='img-left' src='../../img/location.png'></image>
+      <text class='kuai-text'>{{address}}</text>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class="page-body-button" type="primary">一键上传</button>
+    </view>
+  </form>
 </view>
