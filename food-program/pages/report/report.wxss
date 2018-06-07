@@ -58,3 +58,7 @@ page{
 .oringe{
   color: #FF4500
 }
+.row{
+  display: flex;
+  flex-direction: row
+}

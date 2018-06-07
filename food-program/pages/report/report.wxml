@@ -4,19 +4,51 @@
     <view class='content'>
       <view class='block'>
         <text>这段时间里</text>
-        <text>你一共吃过{{type_number}}种美食</text>
+        <view class='row'>
+          <text>你一共吃过</text>
+          <text class='oringe'>{{type_number}}</text>
+          <text>种美食</text>
+        </view>
+        <!--text>你一共吃过{{type_number}}种美食</text-->
       </view>
       <view class='block'>
-        <text>在{{price_date}}大概是很特别的一天</text>
-        <text>你略微奢侈地吃了一顿{{price}}元大餐</text>
+       <view class='row'>
+          <text>在</text>
+          <text class='oringe'>{{price_date}}</text>
+          <text>大概是很特别的一天</text>
+        </view>
+        <view class='row'>
+          <text>你略微奢侈地吃了一顿</text>
+          <text class='oringe'>{{price}}</text>
+          <text>元大餐</text>
+        </view>
+        <!--text>在{{price_date}}大概是很特别的一天</text>
+        <text>你略微奢侈地吃了一顿{{price}}元大餐</text-->
       </view>
       <view class='block'>
-        <text>{{late_date}}这一天你回家很晚</text>
-        <text>{{late_time}}还沉浸在美食的世界中</text>
+       <view class='row'>
+          <text class='oringe'>{{late_date}}</text>
+          <text>这一天你回家很晚</text>
+        </view>
+        <view class='row'>
+          <text class='oringe'>{{late_time}}</text>
+          <text>点还沉浸在美食的世界中</text>
+        </view>
+        <!--text>{{late_date}}这一天你回家很晚</text>
+        <text>{{late_time}}点还沉浸在美食的世界中</text-->
       </view>
       <view class='block'>
-        <text>你偏爱：{{faverate}}</text>
-        <text>期间一共吃过{{faverate_times}}次</text>
+        <view class='row'>
+          <text>你偏爱：</text>
+          <text class='oringe'>{{faverate}}</text>
+        </view>
+        <view class='row'>
+          <text>期间一共吃过</text>
+          <text class='oringe'>{{faverate_times}}</text>
+          <text>次</text>
+        </view>
+        <!--text>你偏爱：{{faverate}}</text>
+        <text>期间一共吃过{{faverate_times}}次</text-->
       </view>
       <view class='block'>
         <text>分享给好友</text>
