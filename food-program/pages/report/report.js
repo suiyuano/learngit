@@ -21,12 +21,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showToast({
+      title: '加载中..',
+      icon: 'loading',
+      duration: 1000
+    });
     var that = this
     wx.login({
 
       success: function (res) {
         var here = that
-        console.log(here.data.user_id)
+       // console.log(here.data.user_id)
         if (res.code) {
           //发起网络请求
          
@@ -149,7 +154,7 @@ Page({
   onShareAppMessage: function () {
     if (res.from === 'button') {
       // 来自页面内转发按钮
-      console.log(res.target)
+      //console.log(res.target)
     }
     return {
       title: '我的美食报告',
@@ -165,13 +170,13 @@ Page({
     })
   },
   bindstartDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+    //console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       startdate: e.detail.value
     })
   },
   bindendDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+    //console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       enddate: e.detail.value
     })
@@ -231,10 +236,10 @@ Page({
       success: function (result) {
         //console.log(result.data.count);
         var data = result.data;
-        console.log(data);
+        //console.log(data);
         that.setData({
           faverate: data.type,
-          //faverate_times: data.times
+          faverate_times: data.count
         })
 
       }
@@ -252,17 +257,25 @@ Page({
       success: function (result) {
         //console.log(result.data.count);
         var data = result.data;
-        console.log(data);
+        //console.log(data);
         that.setData({
           late_date: data.date,
           late_time: data.time
         })
 
       }
-    })
+    }),
+    
+
+      wx.showToast({
+        title: '成功刷新！',
+        icon: 'success',
+        duration: 1000
+      })
+
   },
 
-
+  
 
 
 

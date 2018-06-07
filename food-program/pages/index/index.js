@@ -32,6 +32,11 @@ Page({
 
   
   onLoad: function () {
+    wx.showToast({
+      title: '加载中..',
+      icon: 'loading',
+      duration: 1000
+    });
     var that=this
     wx.login({
       
@@ -54,7 +59,7 @@ Page({
               here.setData({
                 user_id: result.data.openid
               }) 
-             // console.log(here.data.user_id)
+              //console.log(here.data.user_id+'刚刚获得的')
               wx.request({
                 url: 'http://118.25.214.51:8080/api/postcount',
                 data: {
@@ -121,7 +126,7 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
+    //console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -132,7 +137,7 @@ Page({
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
-      console.log(res.target)
+      //console.log(res.target)
     }
     return {
       title: '我的美食报告',
@@ -155,8 +160,8 @@ Page({
     this.mapCtx.getCenterLocation({
       
       success: function (res) {
-        console.log(res.longitude+'一')
-        console.log(res.latitude+'一')
+        //console.log(res.longitude+'一')
+        //console.log(res.latitude+'一')
         that.setData({
           longitude: res.longitude,
           latitude: res.latitude
@@ -172,8 +177,8 @@ Page({
     type: 'wgs84',
     this.mapCtx.getCenterLocation({
       success: function (res) {
-        console.log(res.longitude+'二')
-        console.log(res.latitude+'二')
+        //console.log(res.longitude+'二')
+        //console.log(res.latitude+'二')
         var getAddressUrl = "https://apis.map.qq.com/ws/geocoder/v1/?location=" + res.latitude + "," + res.longitude + "&key=O44BZ-DLB6P-A3FDW-VAYGQ-HVPG5-MRBBX&get_poi=1";
         wx.request({
           url: getAddressUrl,
@@ -182,7 +187,7 @@ Page({
             that.setData({
               address: ops.data.result.address
             })
-            console.log(that.data.address)
+            //console.log(that.data.address)
             wx.showModal({
               title: '您当前的位置：',
               content: ops.data.result.address,
@@ -198,56 +203,13 @@ Page({
  
     this.mapCtx.getCenterLocation({
       success: function (res) {
-        console.log(res.longitude+'三')
-        console.log(res.latitude+'三')
-
-       
-
-        /*var QQMapWX = require('../..//qqmap-wx-jssdk.js');
-
-        // 实例化API核心类
-        var demo = new QQMapWX({
-          key: 'O44BZ-DLB6P-A3FDW-VAYGQ-HVPG5-MRBBX' // 必填
-        });
-
-        // 调用接口
-        demo.reverseGeocoder({
-          location: {
-            latitude: res.longitude,
-            longitude: res.latitude
-          },
-          success: function (res) {
-            console.log(res);
-          },
-          fail: function (res) {
-            console.log(res);
-          },
-          complete: function (res) {
-            console.log(res);
-          }
-        })*/
-        
-        /*var latitude = res.latitude
-        var longitude = res.longitude
-        wx.openLocation({
-          latitude: latitude,
-          longitude: longitude,
-          scale: 28
-        })*/
+        //console.log(res.longitude+'三')
+        //console.log(res.latitude+'三')
       }
     })
-   /* wx.request({
-      url: 'http://map.qq.com/api/js?v=2.exp',
-      success: function(){
-              }
-    })
-    wx.request({
-      url: 'http:// 118.25.214.51:8080/api/login',
-      success: function(result){
-        console.log(result.user_id)
-      }
-    })*/
   },
+
+
   translateMarker: function () {
     this.mapCtx.translateMarker({
       markerId: 1,
@@ -275,6 +237,7 @@ Page({
     })
   },
   navigateto_upload: function() {
+    console.log(this.data.user_id+'跳转时的user_id')
     wx.navigateTo({
       url: '../upload/upload'+"?address="+this.data.address+'&user_id='+this.data.user_id
     })

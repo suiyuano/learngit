@@ -89,7 +89,12 @@ Page({
         price:this.data.totalprice
       },
       success: function(result){
-        console.log(result)
+        //console.log(result)
+        wx.showToast({
+          title: '成功上传！',
+          icon: 'success',
+          duration: 1000
+        })
       }
     })
   },
@@ -101,6 +106,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showToast({
+      title: '加载中..',
+      icon: 'loading',
+      duration: 2000
+    });
    console.log(options.address)
    this.setData({
      address: options.address,
