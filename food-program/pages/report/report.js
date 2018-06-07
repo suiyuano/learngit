@@ -29,6 +29,12 @@ Page({
         console.log(here.data.user_id)
         if (res.code) {
           //发起网络请求
+         
+         
+         
+         
+         
+         
           wx.request({
             url: 'http://118.25.214.51:8080/api/login',
             method: 'GET',
@@ -46,7 +52,7 @@ Page({
             
             
             
-              wx.request({
+             /* wx.request({
                 url: 'http://118.25.214.51:8080/api/foodcount',
                 data: {
                   user_id: here.data.user_id,
@@ -123,7 +129,7 @@ Page({
                   })
 
                 }
-              })
+              })*/
 
 
             }
@@ -135,48 +141,8 @@ Page({
     });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
+ 
   /**
    * 用户点击右上角分享
    */
@@ -210,9 +176,96 @@ Page({
       enddate: e.detail.value
     })
   },
- /* resetreport: function() {
-    onLoad()
-  },*/
+
+
+
+
+  resetreport: function() {
+    var that=this
+    wx.request({
+      url: 'http://118.25.214.51:8080/api/foodcount',
+      data: {
+        user_id: this.data.user_id,
+        bdate: this.data.startdate,
+        edate: this.data.enddate
+      },
+      success: function (result) {
+        //console.log(result.data.count);
+        var data = result.data;
+        //console.log(data);
+        that.setData({
+          type_number: data.count
+        })
+
+      }
+    })
+
+    wx.request({
+      url: 'http://118.25.214.51:8080/api/mprice',
+      data: {
+        user_id: this.data.user_id,
+        bdate: this.data.startdate,
+        edate: this.data.enddate
+      },
+      success: function (result) {
+        //console.log(result.data.count);
+        var data = result.data;
+        // console.log(data);
+        that.setData({
+          price_date: data.date,
+          price: data.price
+        })
+
+      }
+    })
+
+
+
+    wx.request({
+      url: 'http://118.25.214.51:8080/api/mtype',
+      data: {
+        user_id: this.data.user_id,
+        bdate: this.data.startdate,
+        edate: this.data.enddate
+      },
+      success: function (result) {
+        //console.log(result.data.count);
+        var data = result.data;
+        console.log(data);
+        that.setData({
+          faverate: data.type,
+          //faverate_times: data.times
+        })
+
+      }
+    })
+
+
+
+    wx.request({
+      url: 'http://118.25.214.51:8080/api/mdate',
+      data: {
+        user_id: this.data.user_id,
+        bdate: this.data.startdate,
+        edate: this.data.enddate
+      },
+      success: function (result) {
+        //console.log(result.data.count);
+        var data = result.data;
+        console.log(data);
+        that.setData({
+          late_date: data.date,
+          late_time: data.time
+        })
+
+      }
+    })
+  },
+
+
+
+
+
   share: function() {
     wx.navigateTo({
       url: '../share/share',
