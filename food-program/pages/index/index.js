@@ -276,7 +276,7 @@ Page({
   },
   navigateto_upload: function() {
     wx.navigateTo({
-      url: '../upload/upload'+"?address="+this.data.address
+      url: '../upload/upload'+"?address="+this.data.address+'&user_id='+this.data.user_id
     })
   }
 })

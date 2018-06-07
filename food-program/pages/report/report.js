@@ -50,8 +50,8 @@ Page({
                 url: 'http://118.25.214.51:8080/api/foodcount',
                 data: {
                   user_id: here.data.user_id,
-                  bdate: '2017-1-1',
-                  edate:'2017-2-1'
+                  bdate: here.data.startdate,
+                  edate:here.data.enddate
                 },
                 success: function (result) {
                   //console.log(result.data.count);
@@ -210,6 +210,9 @@ Page({
       enddate: e.detail.value
     })
   },
+ /* resetreport: function() {
+    onLoad()
+  },*/
   share: function() {
     wx.navigateTo({
       url: '../share/share',
