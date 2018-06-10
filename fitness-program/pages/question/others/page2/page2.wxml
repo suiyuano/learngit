@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-second-2.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -15,7 +15,7 @@
   <text class='text'>过分注重挺胸收腹，常会不自觉地出现臀部后撅的现象，久而久之还有可能造成腰肌劳损。可以尝试脚尖着地发力，继而使大腿后侧肌肉紧绷，同时髋部向前至骨盆中立位，此时意念集中于臀部肌肉的紧缩上。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-second-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、保证良好的行走体态的三个要点</text>

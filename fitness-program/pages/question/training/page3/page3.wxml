@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-third-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -13,7 +13,7 @@
 </text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-third-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、非同步式呼吸应何时使用</text>
@@ -22,7 +22,7 @@
   <text class='text'>第二种形式为在一次动作间歇时进行几次呼吸。即在超大重量负荷(极限的90%以上)或身体接近疲劳时，调整一下呼吸，以便再努力完成一次动作练习，常见于深蹲等动作。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-third-3.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、自由调节式呼吸应何时使用</text>

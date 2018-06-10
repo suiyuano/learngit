@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-second-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -11,7 +11,7 @@
   <text class='text'>3.“暴食日”为什么会产生意想不到的效果：当每周暴食一次，摄入两倍于平时摄入量的卡路里时，你的身体并不能感知这些卡路里是应该被作为脂肪储存起来的。当你的身体突然接受了罕见的、大量的卡路里时，会产生大量的热量，为体内提供了一个代谢环境，防止脂肪的囤积，同时提供了增加肌肉所需的额外的卡路里。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-second-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、暴食日应当选择“欺骗餐”吗</text>

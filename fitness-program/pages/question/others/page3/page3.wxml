@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-third-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -10,7 +10,7 @@
   <text class='text'>而吸烟使人感到放松，在一定程度上反而会降低体内皮质醇的水平，因此健身者不必戒烟。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-third-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、训练过程中应戒烟</text>

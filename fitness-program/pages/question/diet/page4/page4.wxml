@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-fourth-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -11,7 +11,7 @@
   <text class='text'>最后，餐前摄入坚果有助于刺激促胆囊收缩素分泌，提前向大脑发出吃饱信号，并减慢胃部排空速度。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-fourth-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、为什么肥胖人群相对来说不易出现饱腹感</text>

@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-frist-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -11,7 +11,7 @@
   <text class='text'>初学者在制定训练计划时可适当延长训练周期，而随训练水平的提升逐渐增加训练频率。大肌群相比于小肌群需要更长的恢复时间。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-frist-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、超量恢复与过度训练最主要的区别在于恢复</text>
@@ -19,7 +19,7 @@
   <text class='text'>而对于初学者而言，更常见的是错过超量恢复的峰值才进行新一轮的分解代谢，而使肌肉萎缩、神经募集能力下降，身体重新回到原先的状态。因此若目标肌群在热身过后无明显酸痛感，且可有效收缩时，便可以进行训练。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-frist-3.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、如何避免错过超量恢复的峰值</text>

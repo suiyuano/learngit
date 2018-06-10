@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-second-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -11,7 +11,7 @@
   <text class='text'>也可以根据负荷重量来选择组间休息时间：若使用1~3次反复力竭的重量，组间歇应选择2~5分钟；若使用8~12次反复力竭的重量，组间歇应选择45秒~90秒；若使用12~20次反复力竭的重量，组间歇应选择40秒~60秒。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-second-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、组间歇的时间应如何控制</text>
@@ -20,7 +20,7 @@
   <text class='text'>而对于已经进入中高级阶段的训练者而言，控制组间歇的时间更需通过控制情绪等心理因素，尽可能地保持长时间的专注，不被外在因素所影响训练状态及训练节奏。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-second-3.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、组间歇时应该做些什么</text>

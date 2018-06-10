@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-fourth-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -10,7 +10,7 @@
   <text class='text'>大骨架：两只手指头没办法相碰；中骨架：两只手指头刚刚好相碰；小骨架：两只手指头相迭超过一个指甲宽。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-fourth-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、计算公式评估骨架大小</text>

@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-first-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -10,7 +10,7 @@
   <text class='text'>“三分练，七分吃”的说法是针对高水平健身者而言的，对于大众尤其是健身初学者而言，训练强度应始终被放在首位。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-first-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、初学者饮食的常见误区</text>

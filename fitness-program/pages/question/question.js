@@ -4,14 +4,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    askfronttrain1:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+   /* wx.request({
+      url: 'http://118.24.184.17:8880/static/weapp/picture/ask-front-train-1.png',
+      success: function(res){
+        console.log(res)
+      }
+    })*/
   },
 
   /**

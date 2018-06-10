@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-fourth-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -14,7 +14,7 @@
 </text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-fourth-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、特殊的训练技巧</text>
@@ -23,7 +23,7 @@
   <text class='text'>3.超慢速训练：延长单次动作的持续时间，主动过程超过10秒钟，被动过程超过5秒钟。或者在运动轨迹中选取几处位置，尤其是粘滞点进行短暂的停留。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-train-fourth-3.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、动作的共性要点</text>

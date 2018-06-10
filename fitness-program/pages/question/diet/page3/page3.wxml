@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-third-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -10,7 +10,7 @@
   <text class='text'>2.与男性相比，碳水化合物摄入应相对较少：女性在摄取碳水化合物后，吸收和储存碳水的能力比男性高30%-50%，而训练消耗碳水的能力比男性低15%，因此女性需降低碳水化合物在总能量中的占比，最好不超过50%，但对于普通女性来说，最好不应低于40%，否则也会影响训练状态，久而久之还会降低瘦素水平，从而导致减脂瓶颈期的出现。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-diet-third-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍二、微量元素上的差异</text>

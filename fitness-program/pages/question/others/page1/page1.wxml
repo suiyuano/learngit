@@ -1,7 +1,7 @@
 <scroll-view scroll-y='true' class='page'>
 
  <view>
-  <image src='../../../../images/海报1.png' class='img'></image>
+  <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-frist-1.png' class='img'></image>
  </view>
 
  <view class='content'>
@@ -11,7 +11,7 @@
   <text class='text'>腹在，即便体脂降到10%，往往也只会显现出4块腹肌。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ <image src='http://118.24.184.17:8880/static/weapp/picture/ask-other-frist-2.png' class='img'></image>
 
  <view class='content'>
   <text class='text-title'>▍三、肌肉量对腹肌形态的影响</text>
@@ -19,7 +19,7 @@
   <text class='text'>因此，体脂率低是腹肌清晰的前提条件，但腹肌形态还会受到其他多方面因素的影响。如果追求分离度高的腹肌形态，除了保持15%以下的体脂，还需要重视强化腹肌，尤其是腹外斜肌的维度。</text>
  </view>
 
- <image src='../../../../images/海报1.png' class='img'></image>
+ 
 
  <view class='content'>
   <text class='text-title'>▍四、一些人体脂率不低，但视觉上为何精瘦</text>
