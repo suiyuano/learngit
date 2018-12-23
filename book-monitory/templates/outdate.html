@@ -1,0 +1,25 @@
+{% extends "common/base.html" %}<!--继承基础模板-->
+{% block content %}<!--自定义模板区域-->
+<div class="col-xs-12 col-sm-9">
+    <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <div class="jumbotron">
+        <h1>欢迎您!</h1>
+        <p>以下是超期借阅信息</p>
+    </div>
+    <ul>
+        {% for each in outdates %}
+        <li>{{each}}</li>
+        {% endfor %}
+    </ul>
+    <h3>
+        以下是借阅人的详细信息：
+    </h3>
+    <ul>
+        {% for each in users %}
+        <li>{{each}}</li>
+        {% endfor %}
+    </ul>
+</div><!--/.col-xs-12.col-sm-9-->
+{% endblock %}

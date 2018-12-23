@@ -1,0 +1,50 @@
+{% extends "common/base.html" %}<!--继承基础模板-->
+{% block content %}<!--自定义模板区域-->
+<div class="col-xs-12 col-sm-9">
+    <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <div class="jumbotron">
+        <h1>欢迎您, 管理员!</h1>
+        <p>请选择下列您要进行的操作</p>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('refer_book')}} role="button">查询书籍信息</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('add_book')}} role="button">增加书籍</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('delete_book')}} role="button">删除书籍</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('change_bookinfo')}} role="button">修改书籍信息</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('show_borrowinfo')}} role="button">查看借阅信息</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('show_outdate')}} role="button">查看超期信息</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('refer_user')}} role="button">查看用户信息</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('add_user')}} role="button">增加用户</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+            <h2>操作</h2>
+            <p><a class="btn btn-default" href={{url_for('delete_user')}} role="button">删除用户</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+    </div><!--/row-->
+</div><!--/.col-xs-12.col-sm-9-->
+{% endblock %}
