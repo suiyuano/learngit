@@ -1,0 +1,25 @@
+
+.headtext{
+  margin-top: 60rpx;
+  padding-left: 80rpx;
+  font-size: 40rpx;
+  
+}
+.img{
+  /*margin-left: 80rpx;*/
+  align-content: center;
+  margin-top: 2rpx;
+  margin-left: 80rpx
+}
+.tip{
+  margin-top: 20rpx;
+  padding-left: 80rpx;
+  padding-right: 80rpx;
+  font-size: 30rpx;
+  color: #A9A9A9
+}
+.page-body-button {
+  margin-top: 2rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx
+}
