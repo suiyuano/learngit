@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!--view class="container"-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="usermotto">
+    <text class="user-motto">Hello {{userInfo.nickName}} !</text>
+  </view>
+    </block>
+  </view>
+  <!--view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view-->
+<!--/view-->
+<view class="kuai">
+    <view>全部订单</view>
+    <image class='img-right1' src='../../image/箭头.png'></image>   
+</view>
+
+<view class="kuai">
+    <view>优惠券</view>
+    <image class='img-right2' src='../../image/箭头.png'></image>   
+</view>
+
+<view class="kuai">
+    <view>帮助反馈</view>
+    <image class='img-right3' src='../../image/箭头.png'></image>   
+</view>
+
+<view class="kuai">
+    <view>联系客服</view>
+    <image class='img-right4' src='../../image/箭头.png'></image>   
+</view>
+
+<view class="kuai">
+    <view>关于我们</view>
+    <image class='img-right5' src='../../image/箭头.png'></image>   
+</view>

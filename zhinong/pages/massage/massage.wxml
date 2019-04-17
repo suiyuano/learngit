@@ -1,0 +1,12 @@
+<view>
+  <view>
+    <text class='headtext'>收件箱</text>
+  </view>
+  <view class='tip'>
+    <text>关于预定作物的所有消息（生长过程信息，配送信息等）会显示在这里</text>
+  </view>
+  <view class='img'>
+    <image mode="aspectFit" src="{{src}}" style='height:800rpx'></image>
+  </view>
+  <button bindtap="experience" class="page-body-button" type="primary">开始体验吧</button>
+</view>
