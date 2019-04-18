@@ -1,0 +1,6 @@
+.img{
+  /*margin-left: 80rpx;*/
+  align-content: center;
+  margin-top: 2rpx;
+  
+}

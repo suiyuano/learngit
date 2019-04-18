@@ -1,0 +1,5 @@
+<view>
+  <view class='img'>
+    <image mode="aspectFill" src="{{src}}" style='width:750rpx'></image>
+  </view>
+</view>
