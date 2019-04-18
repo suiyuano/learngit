@@ -23,3 +23,8 @@
   margin-left: 20rpx;
   margin-right: 20rpx
 }
+.buttonsize{
+  padding-left: 80rpx;
+  padding-right: 80rpx;
+  
+}

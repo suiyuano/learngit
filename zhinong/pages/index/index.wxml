@@ -17,3 +17,51 @@
       </swiper>
     </view>
 </view>
+
+<view>
+   <view class='img'>
+    <image mode="aspectFit" src="../../image/slogen.png" style='height:120rpx'></image>
+  </view>
+</view>
+
+<view>
+  <view class="page-section">
+    <view class="title"></view>
+    <view class='input-size'>
+      <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="输入所在城市"/>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+
+<view class="index-button">
+  <button bindtap="experience"  type="primary">查找附近可预约作物</button>
+</view>
+
+<view class='text-area'>
+  <text class='spring'>春季推荐</text>
+  <text class='yanyu'>清明前后，种瓜点豆</text>
+</view>
+
+<view class='img-area'>
+  <view class='img-view'>
+    <image  class="round-img" src="../../image/kind3.png" ></image>
+    <text>茄子</text>
+  </view>
+  <view class='img-view'>
+    <image  class="round-img" src="../../image/kind1.png" ></image>
+    <text>番茄</text>
+  </view>
+  <view class='img-view'>
+    <image  class="round-img" src="../../image/kind2.png" ></image>
+    <text>韭菜</text>
+  </view>
+  <view class='img-view'>
+    <image  class="round-img" src="../../image/kind4.png" ></image>
+    <text>青椒</text>
+  </view>
+</view>
+

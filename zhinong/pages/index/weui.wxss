@@ -155,6 +155,8 @@ icon {
 .weui-cell_input {
   padding-top: 0;
   padding-bottom: 0;
+  margin-left: 80rpx;
+  justify-content: center
 }
 .weui-label {
   width: 105px;
@@ -165,6 +167,7 @@ icon {
   height: 2.58823529em;
   min-height: 2.58823529em;
   line-height: 2.58823529em;
+  margin-left: 80rpx
 }
 .weui-toptips {
   position: fixed;

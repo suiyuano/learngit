@@ -8,5 +8,8 @@
   <view class='img'>
     <image mode="aspectFit" src="{{src}}" style='height:800rpx'></image>
   </view>
+</view>
+
+<view class='buttonsize'>
   <button bindtap="experience" class="page-body-button" type="primary">开始体验吧</button>
 </view>
