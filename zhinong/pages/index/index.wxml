@@ -1,5 +1,19 @@
 <view>
-  <view class='img'>
-    <image mode="aspectFill" src="{{src}}" style='width:750rpx'></image>
-  </view>
+  <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+       <block>
+    <swiper-item>
+      <image src="../../image/beijing4.png" class="slide-image"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/beijing5.png" class="slide-image"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/beijing6.png" class="slide-image"/> 
+    </swiper-item>
+  </block>
+      </swiper>
+    </view>
 </view>

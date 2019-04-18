@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src:'../../image/beijing1.png'
+    src:'../../image/beijing7.png'
   },
 
   /**
