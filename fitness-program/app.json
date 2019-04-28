@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/pre/pre",
     "pages/index/index",
     "pages/index/leg/leg",
@@ -36,8 +36,8 @@
     "pages/question/others/page3/page3",
     "pages/question/others/page4/page4"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarTitleText": "塑形捷径",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTextStyle": "white"
@@ -64,5 +64,6 @@
         "selectedIconPath": "/images/action/工具图标【鼠标点击后】.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

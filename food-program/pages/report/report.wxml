@@ -82,7 +82,7 @@
 </view>
 
   <button bindtap="resetreport" class="page-body-button" type="primary">生成美食报告</button>
-  <button bindtap="share" class="page-body-button" type="primary">分享朋友圈</button>
+ 
 </scroll-view>
 
 

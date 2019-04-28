@@ -14,7 +14,7 @@ class Complex:
     # 减
     def sub(self):
         return Number(self.x.r - self.y.r, self.x.im - self.y.im).show()
-    
+
     # 乘
     def multi(self):
         return Number(self.x.r * self.y.r - self.x.im * self.y.im, self.y.r * self.x.im + self.x.r * self.y.im).show()
