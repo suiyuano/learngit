@@ -2,6 +2,7 @@
 # coding=utf-8
 import sys
 import string
+import fileinput
 
 keywards = {}
 
@@ -36,7 +37,6 @@ keywards['}'] = 25
 keywards['/*'] = 26
 keywards['*/'] = 27
 
-
 # 变量
 # keywards['var'] = 301
 
@@ -59,6 +59,7 @@ def pretreatment(file_name):
         fp_read = open(file_name, 'r')
         fp_write = open('file.tmp', 'w')
         sign = 0
+
         while True:
             read = fp_read.readline()
             if not read:
@@ -88,8 +89,9 @@ def pretreatment(file_name):
                     if sign == 1:
                         continue
                     else:
-                        fp_write.write(' ')
+                        fp_write.write('@')
                         sign = 1
+                        # print('此时找到一个换行符')
                 elif read[i] == '"':
                     fp_write.write(read[i])
                     i += 1
@@ -115,10 +117,12 @@ def pretreatment(file_name):
         print(file_name, ': This FileName Not Found!')
 
 
-def save(string):
+def save(string, index):
     if string in keywards.keys():
+        print("   " + str(index) + ':' + "reserve word:" + string)
         if string not in signlist.keys():
             signlist[string] = keywards[string]
+            # print("   " + str(index) + ':' + "reserve word:" + string)
             # print("signlist:"+signlist)
         else:
             pass
@@ -126,8 +130,10 @@ def save(string):
         try:
             float(string)
             save_const(string)
+            print("   " + str(index) + ':' + "NUM,val=" + string)
         except ValueError:
-            save_var(string)
+            save_var(string, index)
+            # print("   " + str(index) + ':' + "ID,name=" + string)
 
 
 def savesigns(string):
@@ -140,11 +146,12 @@ def savesigns(string):
         pass
 
 
-def save_var(string):
+def save_var(string, index):
     if string not in signlist.keys():
         if len(string.strip()) < 1:
             pass
         else:
+            print("   " + str(index) + ':' + "ID,name=" + string)
             if is_signal(string) == 1:
                 signlist[string] = 301
             else:
@@ -173,7 +180,7 @@ def is_signal(s):
         return 0
 
 
-def recognition(filename):
+def recognition(filename, index):
     try:
         fp_read = open(filename, 'r')  # 该文件对象只能用一次么？于是在main函数中重新定义了一个文件对象
         string = ""
@@ -192,51 +199,57 @@ def recognition(filename):
                     if sign == 1 or sign == 2:
                         string += read
                     else:
-                        save(string)
+                        save(string, index=index)
                         string = ""
                         sign = 0
             elif read == '(':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index=index)
                     string = ""
                     savesigns('(')
+                    print("   " + str(index) + ':' + "Signals:" + '(')
             elif read == ')':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index=index)
                     string = ""
                     savesigns(')')
+                    print("   " + str(index) + ':' + "Signals:" + ')')
             elif read == '[':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index=index)
                     string = ""
                     savesigns('[')
+                    print("   " + str(index) + ':' + "Signals:" + '[')
             elif read == ']':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index=index)
                     string = ""
                     savesigns(']')
+                    print("   " + str(index) + ':' + "Signals:" + ']')
             elif read == '{':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index)
                     string = ""
                     savesigns('{')
+                    print("   " + str(index) + ':' + "Signals:" + '{')
             elif read == '}':
                 if sign == 1 or sign == 2:
                     string += read
                 else:
-                    save(string)
+                    save(string, index)
                     string = ""
                     savesigns('}')
+                    print("   " + str(index) + ':' + "Signals:" + '}')
             # elif read == '<':
             #     save(string)
             #     string = ""
@@ -246,34 +259,40 @@ def recognition(filename):
             #     string = ""
             #     savesigns('>')
             elif read == ',':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns(',')
+                print("   " + str(index) + ':' + "Signals:" + ',')
 
             elif read == ';':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns(';')
+                print("   " + str(index) + ':' + "Signals:" + ';')
 
             elif read == '+':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns('+')
+                print("   " + str(index) + ':' + "Signals:" + '+')
 
             elif read == '-':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns('-')
+                print("   " + str(index) + ':' + "Signals:" + '-')
 
             elif read == '*':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns('*')
+                print("   " + str(index) + ':' + "Signals:" + '*')
 
             elif read == '/':
-                save(string)
+                save(string, index)
                 string = ""
                 savesigns('/')
+                print("   " + str(index) + ':' + "Signals:" + '/')
 
 
             # elif read == '=':
@@ -283,35 +302,41 @@ def recognition(filename):
             elif read == '=':
                 readnext = fp_read.read(1)
                 if readnext == '=':
-                    save(string)
+                    save(string, index)
                     string = ""
                     savesigns('==')
+                    print("   " + str(index) + ':' + "Signals:" + '==')
                 else:
-                    save(string)
+                    save(string, index)
                     string = "{}".format(readnext)
                     savesigns('=')
+                    print("   " + str(index) + ':' + "Signals:" + '=')
 
             elif read == '<':
                 readnext = fp_read.read(1)
                 if readnext == '=':
-                    save(string)
+                    save(string, index)
                     string = ""
                     savesigns('<=')
+                    print("   " + str(index) + ':' + "Signals:" + '<=')
                 else:
-                    save(string)
+                    save(string, index)
                     string = "{}".format(readnext)
                     savesigns('<')
+                    print("   " + str(index) + ':' + "Signals:" + '<')
 
             elif read == '>':
                 readnext = fp_read.read(1)
                 if readnext == '=':
-                    save(string)
+                    save(string, index)
                     string = ""
                     savesigns('>=')
+                    print("   " + str(index) + ':' + "Signals:" + '>=')
                 else:
-                    save(string)
+                    save(string, index)
                     string = "{}".format(readnext)
                     savesigns('>')
+                    print("   " + str(index) + ':' + "Signals:" + '>')
 
 
             elif read == '!':
@@ -319,6 +344,7 @@ def recognition(filename):
                 save(string)
                 string = ""
                 savesigns('!=')
+                print("   " + str(index) + ':' + "Signals:" + '!=')
 
             else:
                 string += read
@@ -332,37 +358,64 @@ def main():
         print("Please Input FileName")
     else:
         pretreatment(sys.argv[1])  # sys.argv[1]为自己设置的外部参数，表示打开文件的目录名
-    recognition('file.tmp')  # 对临时文件进行分析，然后将结果输出打印
+    # recognition('file.tmp')  # 对临时文件进行分析，然后将结果输出打印
 
     fp_read = open('file.tmp', 'r')  # 该文件对象只能用一次么？于是在main函数中重新定义了一个文件对象
     sourcestring = fp_read.read()  # 转化后的原始字符串
-    # print("sourcestring:"+sourcestring)
+    print("sourcestring:" + sourcestring)
+    flakes = sourcestring.split('@')
+    print(flakes)
+    fp_read.close()
+    index = 0
 
-    # print(signals)
+    for each in flakes:
+        index += 1
+        fp_old = open('file.tmp', 'r')
+        old_content = fp_old.read()
 
-    for res in ['int', 'if', 'else', 'return', 'void', 'while']:
-        if res in signlist.keys():
-            reserves.append(res)
-    # print(reserves)
+        print(str(index) + ':' + each)
 
-    for i in signlist.keys():
-        # print("(", signlist[i], ",", i, ")")
-        if signlist[i] == 301:
-            varys.append(i)
-        elif signlist[i] == 401:
-            numbers.append(i)
+        fp_old.close()
 
-    # print(varys)
-    # print(numbers)
+        signals = []  # 专用符号
+        reserves = []  # 保留字
+        varys = []  # 变量
+        numbers = []  # 常量
 
-    for i in reserves:
-        print("reserve word:" + i)
-    for i in varys:
-        print("ID,name=" + i)
-    for i in numbers:
-        print("NUM,val=" + i)
-    for i in signals:
-        print("Signals:" + i)
+        for line in fileinput.input("file.tmp", inplace=1):
+            line = line.replace(old_content, each)
+            print(line, end="")
+
+        recognition('file.tmp', index=index)
+        # print(signals)
+
+        for res in ['int', 'if', 'else', 'return', 'void', 'while']:
+            if res in signlist.keys():
+                reserves.append(res)
+        # print(reserves)
+
+        for i in signlist.keys():
+            # print("(", signlist[i], ",", i, ")")
+            if signlist[i] == 301:
+                varys.append(i)
+            elif signlist[i] == 401:
+                numbers.append(i)
+
+        for i in signlist.keys():
+            if signlist[i] in (7, 28):
+                signals.append(i)
+
+        # print(varys)
+        # print(numbers)
+
+        # for i in reserves:
+        #     print("   "+str(index)+':'+"reserve word:" + i)
+        # for i in varys:
+        #     print("   "+str(index)+':'+"ID,name=" + i)
+        # for i in numbers:
+        #     print("   "+str(index)+':'+"NUM,val=" + i)
+        # for i in signals:
+        #     print("   "+str(index)+':'+"Signals:" + i)
 
 
 if __name__ == '__main__':
