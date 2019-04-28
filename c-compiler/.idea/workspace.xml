@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1995eda6-2495-4af3-b723-9c4363be32e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/standard-output-compiler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fitness-program/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fitness-program/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fitness-program/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fitness-program/project.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../food-program/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../food-program/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../food-program/pages/report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/../food-program/pages/report/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../food-program/pages/report/report.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../food-program/pages/report/report.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../food-program/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../food-program/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/complex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/complex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/complex/complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/complex/complex.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,44 +27,67 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1057" />
+          <entry key="py" value="1076" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1057" />
+          <entry key="Python" value="1076" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c-compiler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6327">
-              <caret line="343" column="11" selection-start-line="343" selection-start-column="11" selection-end-line="343" selection-end-column="11" />
+            <state relative-caret-position="2527">
+              <caret line="189" column="26" selection-end-line="383" />
               <folding>
                 <element signature="e#40#50#0" expanded="true" />
-                <marker date="1555927167985" expanded="false" signature="3481:3641" ph="..." />
+                <element signature="e#3933#3997#0" />
+                <element signature="e#4028#4092#0" />
+                <element signature="e#4117#4368#0" />
+                <element signature="e#4402#8775#0" />
+                <marker date="1556454766326" expanded="false" signature="3481:3641" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/standard-output-compiler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+              <folding>
+                <element signature="e#40#50#0" expanded="true" />
+                <element signature="e#3128#3456#0" />
+                <element signature="e#3486#3638#0" />
+                <element signature="e#3667#3902#0" />
+                <element signature="e#3933#3997#0" />
+                <element signature="e#4028#4092#0" />
+                <element signature="e#4117#4368#0" />
+                <element signature="e#4402#8775#0" />
               </folding>
             </state>
           </provider>
@@ -94,6 +119,7 @@
       <list>
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/c-compiler.py" />
+        <option value="$PROJECT_DIR$/standard-output-compiler.py" />
       </list>
     </option>
   </component>
@@ -117,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,11 +155,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -220,8 +247,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12935656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -251,21 +279,42 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c-compiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6327">
-          <caret line="343" column="11" selection-start-line="343" selection-start-column="11" selection-end-line="343" selection-end-column="11" />
-          <folding>
-            <element signature="e#40#50#0" expanded="true" />
-            <marker date="1555927167985" expanded="false" signature="3481:3641" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c-compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2527">
+          <caret line="189" column="26" selection-end-line="383" />
+          <folding>
+            <element signature="e#40#50#0" expanded="true" />
+            <element signature="e#3933#3997#0" />
+            <element signature="e#4028#4092#0" />
+            <element signature="e#4117#4368#0" />
+            <element signature="e#4402#8775#0" />
+            <marker date="1556454766326" expanded="false" signature="3481:3641" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standard-output-compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#50#0" expanded="true" />
+            <element signature="e#3128#3456#0" />
+            <element signature="e#3486#3638#0" />
+            <element signature="e#3667#3902#0" />
+            <element signature="e#3933#3997#0" />
+            <element signature="e#4028#4092#0" />
+            <element signature="e#4117#4368#0" />
+            <element signature="e#4402#8775#0" />
+          </folding>
         </state>
       </provider>
     </entry>
