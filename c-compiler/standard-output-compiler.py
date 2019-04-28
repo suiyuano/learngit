@@ -362,9 +362,9 @@ def main():
 
     fp_read = open('file.tmp', 'r')  # 该文件对象只能用一次么？于是在main函数中重新定义了一个文件对象
     sourcestring = fp_read.read()  # 转化后的原始字符串
-    print("sourcestring:" + sourcestring)
+    # print("sourcestring:" + sourcestring)
     flakes = sourcestring.split('@')
-    print(flakes)
+    # print(flakes)
     fp_read.close()
     index = 0
 
@@ -416,7 +416,7 @@ def main():
         #     print("   "+str(index)+':'+"NUM,val=" + i)
         # for i in signals:
         #     print("   "+str(index)+':'+"Signals:" + i)
-
+        '''把这几行代码代码注释掉，可以发现已经把这些词义分门别类地存好了'''
 
 if __name__ == '__main__':
     main()
