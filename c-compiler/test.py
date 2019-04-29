@@ -6,3 +6,4 @@ result={}
 result[string]=keyword[string]
 print(result)
 print(result[0])
+

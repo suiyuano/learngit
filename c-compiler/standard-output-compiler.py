@@ -375,48 +375,51 @@ def main():
 
         print(str(index) + ':' + each)
 
-        fp_old.close()
+        if index==1:
+            continue
+        else:
+            fp_old.close()
 
-        signals = []  # 专用符号
-        reserves = []  # 保留字
-        varys = []  # 变量
-        numbers = []  # 常量
+            signals = []  # 专用符号
+            reserves = []  # 保留字
+            varys = []  # 变量
+            numbers = []  # 常量
 
-        for line in fileinput.input("file.tmp", inplace=1):
-            line = line.replace(old_content, each)
-            print(line, end="")
+            for line in fileinput.input("file.tmp", inplace=1):
+                line = line.replace(old_content, each)
+                print(line, end="")
 
-        recognition('file.tmp', index=index)
-        # print(signals)
+            recognition('file.tmp', index=index)
+            # print(signals)
 
-        for res in ['int', 'if', 'else', 'return', 'void', 'while']:
-            if res in signlist.keys():
-                reserves.append(res)
-        # print(reserves)
+            # for res in ['int', 'if', 'else', 'return', 'void', 'while']:
+            #     if res in signlist.keys():
+            #         reserves.append(res)
+            # # print(reserves)
+            #
+            # for i in signlist.keys():
+            #     # print("(", signlist[i], ",", i, ")")
+            #     if signlist[i] == 301:
+            #         varys.append(i)
+            #     elif signlist[i] == 401:
+            #         numbers.append(i)
+            #
+            # for i in signlist.keys():
+            #     if signlist[i] in (7, 28):
+            #         signals.append(i)
 
-        for i in signlist.keys():
-            # print("(", signlist[i], ",", i, ")")
-            if signlist[i] == 301:
-                varys.append(i)
-            elif signlist[i] == 401:
-                numbers.append(i)
+            # print(varys)
+            # print(numbers)
 
-        for i in signlist.keys():
-            if signlist[i] in (7, 28):
-                signals.append(i)
-
-        # print(varys)
-        # print(numbers)
-
-        # for i in reserves:
-        #     print("   "+str(index)+':'+"reserve word:" + i)
-        # for i in varys:
-        #     print("   "+str(index)+':'+"ID,name=" + i)
-        # for i in numbers:
-        #     print("   "+str(index)+':'+"NUM,val=" + i)
-        # for i in signals:
-        #     print("   "+str(index)+':'+"Signals:" + i)
-        '''把这几行代码代码注释掉，可以发现已经把这些词义分门别类地存好了'''
+            # for i in reserves:
+            #     print("   "+str(index)+':'+"reserve word:" + i)
+            # for i in varys:
+            #     print("   "+str(index)+':'+"ID,name=" + i)
+            # for i in numbers:
+            #     print("   "+str(index)+':'+"NUM,val=" + i)
+            # for i in signals:
+            #     print("   "+str(index)+':'+"Signals:" + i)
+            '''把这几行代码代码注释掉，可以发现已经把这些词义分门别类地存好了'''
 
 if __name__ == '__main__':
     main()
