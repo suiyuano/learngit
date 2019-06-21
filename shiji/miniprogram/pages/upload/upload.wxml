@@ -1,0 +1,29 @@
+<view class='page'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="block">
+      <input name="input" placeholder="这一份美食的价格..." />
+    </view>
+    <view>
+      <image src='../../img/addimg.png' class='addimg'></image>
+    </view>
+
+
+    <view class="section">
+      <view class="section__title">选择这次的美食类型：</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+
+    <view class='kuai'>
+      <image class='img-left' src='../../img/location.png'></image>
+      <text class='kuai-text'>{{address}}</text>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class="page-body-button" type="primary">一键上传</button>
+    </view>
+  </form>
+</view>

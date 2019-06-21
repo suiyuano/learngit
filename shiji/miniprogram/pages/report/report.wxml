@@ -1,0 +1,90 @@
+
+<view style='height:100%' >
+  <view style='background-image:url({{URL}})' class='background' >
+    <view class='content'>
+      <view class='block'>
+        <text>这段时间里</text>
+        <view class='row'>
+          <text>你一共吃过</text>
+          <text class='oringe'>{{type_number}}</text>
+          <text>种美食</text>
+        </view>
+        <!--text>你一共吃过{{type_number}}种美食</text-->
+      </view>
+      <view class='block'>
+       <view class='row'>
+          <text>在</text>
+          <text class='oringe'>{{price_date}}</text>
+          <text>大概是很特别的一天</text>
+        </view>
+        <view class='row'>
+          <text>你略微奢侈地吃了一顿</text>
+          <text class='oringe'>{{price}}</text>
+          <text>元大餐</text>
+        </view>
+        <!--text>在{{price_date}}大概是很特别的一天</text>
+        <text>你略微奢侈地吃了一顿{{price}}元大餐</text-->
+      </view>
+      <view class='block'>
+       <view class='row'>
+          <text class='oringe'>{{late_date}}</text>
+          <text>这一天你回家很晚</text>
+        </view>
+        <view class='row'>
+          <text class='oringe'>{{late_time}}</text>
+          <text>点还沉浸在美食的世界中</text>
+        </view>
+        <!--text>{{late_date}}这一天你回家很晚</text>
+        <text>{{late_time}}点还沉浸在美食的世界中</text-->
+      </view>
+      <view class='block'>
+        <view class='row'>
+          <text>你偏爱：</text>
+          <text class='oringe'>{{faverate}}</text>
+        </view>
+        <view class='row'>
+          <text>期间一共吃过</text>
+          <text class='oringe'>{{faverate_times}}</text>
+          <text>次</text>
+        </view>
+        <!--text>你偏爱：{{faverate}}</text>
+        <text>期间一共吃过{{faverate_times}}次</text-->
+      </view>
+      <view class='block'>
+        <text>分享给好友</text>
+        <text>交流一下吃货的心得！</text>
+      </view>
+      
+    </view>
+
+  </view>
+
+</view>
+
+<scroll-view>
+  <!--image class='button' src='../../img/share.png' bindtap='share'></image-->
+  <view class="section">
+    <text class="section_title">请选择时间段：</text>
+    <view class='start_and_enddata'>
+      <picker mode="date" value="{{date}}"start="2015-09-01"end="2020-09-01"bindchange="bindstartDateChange">
+      <view class="picker">
+        <text class='oringe'>从：</text>
+         {{startdate}}
+      </view>
+      </picker>
+      <picker mode="date" value="{{date}}"start="2015-09-01"end="2020-09-01"bindchange="bindendDateChange">
+      <view class="picker">
+        <text class='oringe'>到：</text>
+        {{enddate}}
+      </view>
+    </picker>
+    </view>
+</view>
+
+  <button bindtap="resetreport" class="page-body-button" type="primary">生成美食报告</button>
+ 
+</scroll-view>
+
+
+
+ 
