@@ -17,7 +17,7 @@ const db = wx.cloud.database()
 Page({
   data: {
     address:null,
-    user_id:null,
+    user_id: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk',
     count:1,
     userInfo: {},
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -51,25 +51,42 @@ Page({
       duration: 1000
     });
 
+    
     var that=this
-    db.collection('counters').where({
-      _openid: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk' // 填入当前用户 openid
-    }).count({
-      success: function (res) {
-        console.log("total:"+res.total)
-        that.setData({
-          count: res.total
-        })
-        console.log("count:"+data.count)
-      }
-    });
-
     wx.cloud.callFunction({
       name: 'getUserid',
       complete: res => {
         console.log('callFunction test result: ', res)
+        // console.log(res.result.openid)
+        that.setData({
+          user_id:res.result.openid
+        })
+        db.collection('counters').where({
+          _openid: res.result.openid // 填入当前用户 openid
+        }).count({
+          success: function (res) {
+            console.log("total:" + res.total)
+            that.setData({
+              count: res.total
+            })
+            console.log("count:" + data.count)
+          }
+        });
       }
     });
+
+    // var that = this
+    // db.collection('counters').where({
+    //   _openid: data.user_id // 填入当前用户 openid
+    // }).count({
+    //   success: function (res) {
+    //     console.log("total:" + res.total)
+    //     that.setData({
+    //       count: res.total
+    //     })
+    //     console.log("count:" + data.count)
+    //   }
+    // });
 
     // 获取用户信息
     wx.getSetting({

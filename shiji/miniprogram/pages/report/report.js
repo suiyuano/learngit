@@ -1,4 +1,4 @@
-
+const db = wx.cloud.database()
 Page({
   
   /**
@@ -6,6 +6,7 @@ Page({
    */
   data: {
     faverate:'鱼香肉丝',
+    user_id: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk',
     faverate_times:0,
     late_time:'晚上10点',
     late_date:'1月1日',
@@ -27,124 +28,141 @@ Page({
       icon: 'loading',
       duration: 1000
     });
+
+
+    //获得openid，并赋值给user_id
     var that = this
-    wx.login({
-
-      success: function (res) {
-        var here = that
-       // console.log(here.data.user_id)
-        if (res.code) {
-          //发起网络请求
-         
-         
-         
-         
-         
-         
-          wx.request({
-            url: 'http://118.25.214.51:8080/api/login',
-            method: 'GET',
-            data: {
-              code: res.code
-            },
-
-
-
-            success: function (result) {
-              here.setData({
-                user_id: result.data.openid
-              })
-              //console.log(here.data.user_id)
-            
-            
-            
-             /* wx.request({
-                url: 'http://118.25.214.51:8080/api/foodcount',
-                data: {
-                  user_id: here.data.user_id,
-                  bdate: here.data.startdate,
-                  edate:here.data.enddate
-                },
-                success: function (result) {
-                  //console.log(result.data.count);
-                  var data = result.data;
-                  //console.log(data);
-                  that.setData({
-                    type_number: data.count
-                  })
-
-                }
-              })
-              
-              wx.request({
-                url: 'http://118.25.214.51:8080/api/mprice',
-                data: {
-                  user_id: here.data.user_id,
-                  bdate: '2017-1-1',
-                  edate: '2017-2-1'
-                },
-                success: function (result) {
-                  //console.log(result.data.count);
-                  var data = result.data;
-                 // console.log(data);
-                  that.setData({
-                    price_date: data.date,
-                    price:data.price
-                  })
-
-                }
-              })
-            
-
-              
-              wx.request({
-                url: 'http://118.25.214.51:8080/api/mtype',
-                data: {
-                  user_id: here.data.user_id,
-                  bdate: '2017-1-1',
-                  edate: '2017-2-1'
-                },
-                success: function (result) {
-                  //console.log(result.data.count);
-                  var data = result.data;
-                  console.log(data);
-                  that.setData({
-                    faverate: data.type,
-                    //faverate_times: data.times
-                  })
-
-                }
-              })
-
-
-
-              wx.request({
-                url: 'http://118.25.214.51:8080/api/mdate',
-                data: {
-                  user_id: here.data.user_id,
-                  bdate: '2017-1-1',
-                  edate: '2017-2-1'
-                },
-                success: function (result) {
-                  //console.log(result.data.count);
-                  var data = result.data;
-                  console.log(data);
-                  that.setData({
-                    late_date: data.date,
-                    late_time: data.time
-                  })
-
-                }
-              })*/
-
-
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
+    wx.cloud.callFunction({
+      name: 'getUserid',
+      complete: res => {
+        console.log('callFunction test result: ', res)
+        // console.log(res.result.openid)
+        that.setData({
+          user_id: res.result.openid
+        })
+        db.collection('counters').where({
+          _openid: res.result.openid // 填入当前用户 openid
+        }).count({
+          success: function (res) {
+            console.log("total:" + res.total)
+            that.setData({
+              count: res.total
+            })
+            // console.log("count:" + data.count)
+          }
+        });
       }
     });
+
+
+
+  //   var that = this
+  //   wx.login({
+
+  //     success: function (res) {
+  //       var here = that
+  //      // console.log(here.data.user_id)
+  //       if (res.code) {
+  //         //发起网络请求
+  //         wx.request({
+  //           url: 'http://118.25.214.51:8080/api/login',
+  //           method: 'GET',
+  //           data: {
+  //             code: res.code
+  //           },
+  //           success: function (result) {
+  //             here.setData({
+  //               user_id: result.data.openid
+  //             })
+  //             //console.log(here.data.user_id)
+            
+  //            /* wx.request({
+  //               url: 'http://118.25.214.51:8080/api/foodcount',
+  //               data: {
+  //                 user_id: here.data.user_id,
+  //                 bdate: here.data.startdate,
+  //                 edate:here.data.enddate
+  //               },
+  //               success: function (result) {
+  //                 //console.log(result.data.count);
+  //                 var data = result.data;
+  //                 //console.log(data);
+  //                 that.setData({
+  //                   type_number: data.count
+  //                 })
+
+  //               }
+  //             })
+              
+  //             wx.request({
+  //               url: 'http://118.25.214.51:8080/api/mprice',
+  //               data: {
+  //                 user_id: here.data.user_id,
+  //                 bdate: '2017-1-1',
+  //                 edate: '2017-2-1'
+  //               },
+  //               success: function (result) {
+  //                 //console.log(result.data.count);
+  //                 var data = result.data;
+  //                // console.log(data);
+  //                 that.setData({
+  //                   price_date: data.date,
+  //                   price:data.price
+  //                 })
+
+  //               }
+  //             })
+            
+
+              
+  //             wx.request({
+  //               url: 'http://118.25.214.51:8080/api/mtype',
+  //               data: {
+  //                 user_id: here.data.user_id,
+  //                 bdate: '2017-1-1',
+  //                 edate: '2017-2-1'
+  //               },
+  //               success: function (result) {
+  //                 //console.log(result.data.count);
+  //                 var data = result.data;
+  //                 console.log(data);
+  //                 that.setData({
+  //                   faverate: data.type,
+  //                   //faverate_times: data.times
+  //                 })
+
+  //               }
+  //             })
+
+
+
+  //             wx.request({
+  //               url: 'http://118.25.214.51:8080/api/mdate',
+  //               data: {
+  //                 user_id: here.data.user_id,
+  //                 bdate: '2017-1-1',
+  //                 edate: '2017-2-1'
+  //               },
+  //               success: function (result) {
+  //                 //console.log(result.data.count);
+  //                 var data = result.data;
+  //                 console.log(data);
+  //                 that.setData({
+  //                   late_date: data.date,
+  //                   late_time: data.time
+  //                 })
+
+  //               }
+  //             })*/
+
+
+  //           }
+  //         })
+  //       } else {
+  //         console.log('登录失败！' + res.errMsg)
+  //       }
+  //     }
+  //   });
   },
 
 
@@ -187,24 +205,50 @@ Page({
 
 
   resetreport: function() {
-    var that=this
-    wx.request({
-      url: 'http://118.25.214.51:8080/api/foodcount',
-      data: {
-        user_id: this.data.user_id,
-        bdate: this.data.startdate,
-        edate: this.data.enddate
-      },
-      success: function (result) {
-        //console.log(result.data.count);
-        var data = result.data;
-        //console.log(data);
-        that.setData({
-          type_number: data.count
-        })
 
+
+    var that = this
+    wx.cloud.callFunction({
+      name: 'getUserid',
+      complete: res => {
+        // console.log('callFunction test result: ', res)
+        // console.log(res.result.openid)
+        that.setData({
+          user_id: res.result.openid
+        })
+        db.collection('counters').where({
+          _openid: res.result.openid // 填入当前用户 openid
+        }).count({
+          success: function (res) {
+            console.log("total:" + res.total)
+            that.setData({
+              type_number: res.total
+            })
+            console.log("type_number:" + data.type_number)
+          }
+        });
       }
-    })
+    });
+
+
+    // var that=this
+    // wx.request({
+    //   url: 'http://118.25.214.51:8080/api/foodcount',
+    //   data: {
+    //     user_id: this.data.user_id,
+    //     bdate: this.data.startdate,
+    //     edate: this.data.enddate
+    //   },
+    //   success: function (result) {
+    //     //console.log(result.data.count);
+    //     var data = result.data;
+    //     //console.log(data);
+    //     that.setData({
+    //       type_number: data.count
+    //     })
+
+    //   }
+    // })
 
    
 
