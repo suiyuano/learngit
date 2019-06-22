@@ -206,7 +206,7 @@ Page({
 
   resetreport: function() {
 
-
+    //刷新美食总数
     var that = this
     wx.cloud.callFunction({
       name: 'getUserid',
@@ -252,28 +252,36 @@ Page({
 
    
 
-
-    wx.request({
-      url: 'http://118.25.214.51:8080/api/mprice',
-      data: {
-        user_id: this.data.user_id,
-        bdate: this.data.startdate,
-        edate: this.data.enddate
-      },
-      success: function (result) {
-        //console.log(result.data.count);
-        var data = result.data;
-        // console.log(data);
-        that.setData({
-          price_date: data.date,
-          price: data.price
-        })
-
+    //刷新最高价格
+    wx.cloud.callFunction({
+      name:'getHprice',
+      complete: res => {
+        console.log('callFunction getHprice result: ', res)
       }
+
     })
 
+    // wx.request({
+    //   url: 'http://118.25.214.51:8080/api/mprice',
+    //   data: {
+    //     user_id: this.data.user_id,
+    //     bdate: this.data.startdate,
+    //     edate: this.data.enddate
+    //   },
+    //   success: function (result) {
+    //     //console.log(result.data.count);
+    //     var data = result.data;
+    //     // console.log(data);
+    //     that.setData({
+    //       price_date: data.date,
+    //       price: data.price
+    //     })
+
+    //   }
+    // })
 
 
+    //刷新最爱种类
     wx.request({
       url: 'http://118.25.214.51:8080/api/mtype',
       data: {
@@ -294,7 +302,7 @@ Page({
     })
 
 
-
+    //刷新最晚时间
     wx.request({
       url: 'http://118.25.214.51:8080/api/mdate',
       data: {
