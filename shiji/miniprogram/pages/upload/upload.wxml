@@ -4,7 +4,7 @@
       <input name="input" placeholder="这一份美食的价格..." />
     </view>
     <view>
-      <image src='../../img/addimg.png' class='addimg'></image>
+      <image src='{{bigImg}}' class='addimg' bindtap='changeBigImg'></image>
     </view>
 
 
@@ -23,7 +23,7 @@
       <text class='kuai-text'>{{address}}</text>
     </view>
     <view class="btn-area">
-      <button formType="submit" class="page-body-button" type="primary">一键上传</button>
+      <button formType="submit" class="page-body-button" type="primary" bindtap="onAdd">一键上传</button>
     </view>
   </form>
 </view>
