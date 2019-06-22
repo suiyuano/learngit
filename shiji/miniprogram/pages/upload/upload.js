@@ -76,7 +76,7 @@ Page({
     const db = wx.cloud.database()
     db.collection('counters').add({
       data: {
-        count: 1,
+        //count: 1,
         //user_id: this.data.user_id,
         type: this.data.mtype,
         location: this.data.address,

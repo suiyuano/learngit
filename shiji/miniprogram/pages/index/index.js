@@ -1,6 +1,18 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const db = wx.cloud.database()
+// db.collection('counters').where({
+//   _openid: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk' // 填入当前用户 openid
+// }).count({
+//   success: function (res) {
+//     console.log(res.total)
+//     // this.setData({
+//     //   count: res.total
+//     // })
+//   }
+// })
+
 
 Page({
   data: {
@@ -28,6 +40,7 @@ Page({
   controltap(e) {
     console.log(e.controlId)
   },
+  
 
 
   
@@ -38,6 +51,18 @@ Page({
       duration: 1000
     });
 
+    var that=this
+    db.collection('counters').where({
+      _openid: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk' // 填入当前用户 openid
+    }).count({
+      success: function (res) {
+        console.log("total:"+res.total)
+        that.setData({
+          count: res.total
+        })
+        console.log("count:"+data.count)
+      }
+    });
 
     wx.cloud.callFunction({
       name: 'getUserid',
