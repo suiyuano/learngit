@@ -5,8 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    queryFood:['冒菜','火锅','串串','烧烤','日本料理','韩国料理','烤鱼','钵钵鸡','川菜','湘菜','苍蝇馆子'],
+    queryCount:[],
+    queryTime:'',
     queryResult: '',
-    faverate:'鱼香肉丝',
+    faverate:'火锅',
     user_id: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk',
     faverate_times:0,
     late_time:'晚上10点',
@@ -77,6 +80,33 @@ Page({
         }
       });
 
+    //刷新最晚时间
+    db.collection('counters').orderBy('currenttime_mark', 'desc').where({
+      _openid: this.data.openid
+    })
+      .get({
+        success: res => {
+          this.setData({
+            queryTime: JSON.stringify(res.data, null, 2)//把数据库返回对象转变为json字符串
+          })
+          // console.log("highest price:"+this.data.queryResult[0]['price'])
+          // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
+          console.log("new sort queryTime:", this.data.queryTime)
+
+        },
+        fail: err => {
+          wx.showToast({
+            icon: 'none',
+            title: '查询记录失败'
+          })
+          console.error('[数据库] [查询记录] 失败：', err)
+        }
+      });
+
+
+    //刷新最喜欢的食物
+    this.type_sort()
+    console.log("queryCount:"+this.data.queryCount)
 
   //   var that = this
   //   wx.login({
@@ -234,6 +264,36 @@ Page({
   // },
 
 
+
+  //排序最多次数
+  type_sort:function (){
+    // for in 遍历需要两个形参 ，index表示数组的下标(可以自定义)，arr表示要遍历的数组
+    for(var index in this.data.queryFood){
+      var countnum = db.collection('counters').where({
+        _openid: this.data.openid, // 填入当前用户 openid
+        type: index
+      }).count({
+        success: function (res) {
+          console.log(res.total)
+        }
+      })
+      var obj = {};
+      obj.name = index;
+      obj.value =countnum;
+      this.data.queryCount.push(obj);
+      }
+		},
+
+  compare: function (property){
+    return function (a, b) {
+      var value1 = a[property];
+      var value2 = b[property];
+      return value1 - value2;
+    }
+  },
+// console.log(arr.sort(compare('age')))
+
+
   resetreport: function() {
 
     //刷新美食总数
@@ -284,6 +344,7 @@ Page({
 
     //刷新最高价格
     var highprice = JSON.parse(this.data.queryResult)[0]['price']//把json字符串，转变为二维数组
+    var highprice_date = JSON.parse(this.data.queryResult)[0]['currentdate']
     db.collection('counters').orderBy('price', 'desc').where({
       _openid: this.data.openid
     })
@@ -292,11 +353,12 @@ Page({
           this.setData({
             // queryResult: JSON.parse(this.data.queryResult),//把json字符串，转变为二维数组
             // price:this.data.queryResult[0]['price']
-            price: highprice
+            price: highprice,
+            price_date:highprice_date
           })
           // console.log("highest price:"+this.data.queryResult[0]['price'])
           // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
-          // console.log("new sort array-2222:", this.data.queryResult)
+          console.log("new sort array-2222:", this.data.queryResult)
           
         },
         fail: err => {
@@ -380,6 +442,19 @@ Page({
 
 
     //刷新最爱种类
+    this.setData({
+      faverate_times:this.data.queryCount.sort(this.compare('value'))[0]['value'],
+      faverate: this.data.queryCount.sort(this.compare('name'))[0]['name']
+    })
+    // db.collection('counters').where({
+    //   _openid: this.data.openid, // 填入当前用户 openid
+    //   type:'火锅'
+    // }).count({
+    //   success: function (res) {
+    //     console.log(res.total)
+    //   }
+    // })
+
     // wx.request({
     //   url: 'http://118.25.214.51:8080/api/mtype',
     //   data: {
@@ -401,6 +476,34 @@ Page({
 
 
     //刷新最晚时间
+    var latesttime = JSON.parse(this.data.queryTime)[0]['currenttime']//把json字符串，转变为二维数组
+    var latesttime_date = JSON.parse(this.data.queryTime)[0]['currentdate']
+    db.collection('counters').orderBy('currenttime_mark', 'desc').where({
+      _openid: this.data.openid
+    })
+      .get({
+        success: res => {
+          this.setData({
+            late_time: latesttime,
+            late_date: latesttime_date
+          })
+          // console.log("highest price:"+this.data.queryResult[0]['price'])
+          // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
+          console.log("new sort array-2222:", this.data.queryTime)
+
+        },
+        fail: err => {
+          wx.showToast({
+            icon: 'none',
+            title: '查询记录失败'
+          })
+          console.error('[数据库] [查询记录] 失败：', err)
+        }
+      }),
+      
+
+
+
     // wx.request({
     //   url: 'http://118.25.214.51:8080/api/mdate',
     //   data: {

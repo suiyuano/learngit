@@ -12,6 +12,7 @@ Page({
     count: null,
     queryResult: '',
     currenttime:'',
+    currenttime_mark:'',
 
     bigImg: '../../img/addimg.png',//默认图片，设置为空也可以
     user_id:null,
@@ -88,6 +89,8 @@ Page({
     return formatDate;
   } ,
 
+  
+
 
   getNowTime :function () {
   // 时间
@@ -110,6 +113,28 @@ Page({
   },
 
 
+  getNowTime_mark: function () {
+    // 时间
+    var newDate = new Date()
+    console.log(newDate)
+    var h = newDate.getHours();
+    var m = newDate.getMinutes();
+    var s = newDate.getSeconds();
+    // if (h < 10) {
+    //   h = '0' + h;
+    // };
+    // if (m < 10) {
+    //   m = '0' + m;
+    // };
+    // if (s < 10) {
+    //   s = '0' + s;
+    // };
+    var time = h * 60 + m ;
+    return time;
+  },
+
+
+
   onAdd: function (e) {
     const db = wx.cloud.database()
     db.collection('counters').add({
@@ -120,7 +145,8 @@ Page({
         location: this.data.address,
         price: this.data.totalprice,
         currentdate:this.getNowDate(),
-        currenttime:this.getNowTime()
+        currenttime:this.getNowTime(),
+        currenttime_mark:this.getNowTime_mark(),
       },
       success: res => {
         // 在返回结果中会包含新创建的记录的 _id
@@ -302,6 +328,9 @@ Page({
 
    var time=this.getNowTime()//用于测试
    console.log("time"+time)
+
+   var time_mark=this.getNowTime_mark()//用于测试
+   console.log(time_mark)
 
    console.log(options.address)
    this.setData({
