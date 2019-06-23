@@ -5,13 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentdate:'',
     step: 1,
     counterId: '',
     openid: '',
     count: null,
     queryResult: '',
-
+    currenttime:'',
 
     bigImg: '../../img/addimg.png',//默认图片，设置为空也可以
     user_id:null,
@@ -69,7 +69,45 @@ Page({
     ]
   },
 
+  getNowDate:function (){
+    var now = new Date();
+    // var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    if(month < 10) {
+      month = '0' + month;
+    };
+    if(day < 10) {
+      day = '0' + day;
+    };
+    //  如果需要时分秒，就放开
+    // var h = now.getHours();
+    // var m = now.getMinutes();
+    // var s = now.getSeconds();
+    var formatDate = month + '-' + day;
+    return formatDate;
+  } ,
 
+
+  getNowTime :function () {
+  // 时间
+  var newDate = new Date()
+  console.log(newDate)
+  var h = newDate.getHours();
+  var m = newDate.getMinutes();
+  var s = newDate.getSeconds();
+  // if (h < 10) {
+  //   h = '0' + h;
+  // };
+  // if (m < 10) {
+  //   m = '0' + m;
+  // };
+  // if (s < 10) {
+  //   s = '0' + s;
+  // };
+  var time = h +'时'+ m + '分' ;
+  return time;
+  },
 
 
   onAdd: function (e) {
@@ -80,8 +118,9 @@ Page({
         //user_id: this.data.user_id,
         type: this.data.mtype,
         location: this.data.address,
-        price: this.data.totalprice
-
+        price: this.data.totalprice,
+        currentdate:this.getNowDate(),
+        currenttime:this.getNowTime()
       },
       success: res => {
         // 在返回结果中会包含新创建的记录的 _id
@@ -257,6 +296,13 @@ Page({
       icon: 'loading',
       duration: 2000
     });
+
+   var date=this.getNowDate()//用于测试
+   console.log('date'+date)
+
+   var time=this.getNowTime()//用于测试
+   console.log("time"+time)
+
    console.log(options.address)
    this.setData({
      address: options.address,

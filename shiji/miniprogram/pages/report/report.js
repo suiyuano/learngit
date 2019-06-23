@@ -283,7 +283,7 @@ Page({
    
 
     //刷新最高价格
-
+    var highprice = JSON.parse(this.data.queryResult)[0]['price']//把json字符串，转变为二维数组
     db.collection('counters').orderBy('price', 'desc').where({
       _openid: this.data.openid
     })
@@ -292,7 +292,7 @@ Page({
           this.setData({
             // queryResult: JSON.parse(this.data.queryResult),//把json字符串，转变为二维数组
             // price:this.data.queryResult[0]['price']
-            price: JSON.parse(this.data.queryResult)[0]['price']//把json字符串，转变为二维数组
+            price: highprice
           })
           // console.log("highest price:"+this.data.queryResult[0]['price'])
           // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
