@@ -7,15 +7,28 @@ cloud.init()
 exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
 
-  return await db.collection('counters').where({
-    _openid: wxContext.OPENID,
+
+  var Reaultarray=db.collection('counters').field({
+    description: true,
+    done: true,
+    progress: true
   })
-    .get({
-      success: function (res) {
-        // res.data 是包含以上定义的两条记录的数组
-        console.log(res.data)
-      }
-    })
+    .get()
+    .then(console.log)
+    .catch(console.error)
+
+  return{
+    resultarray:Reaultarray
+  }
+  // return await db.collection('counters').where({
+  //   _openid: wxContext.OPENID,
+  // })
+  //   .get({
+  //     success: function (res) {
+  //       // res.data 是包含以上定义的两条记录的数组
+  //       console.log(res.data)
+  //     }
+  //   })
 
   // result=wx.cloud.callFunction({
   //   name: 'getTotal',

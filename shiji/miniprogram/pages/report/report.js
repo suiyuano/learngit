@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    queryResult: '',
     faverate:'鱼香肉丝',
     user_id: 'olXAu5ZkhngGMgxNTb9n5jBb_-Nk',
     faverate_times:0,
@@ -28,7 +29,7 @@ Page({
       icon: 'loading',
       duration: 1000
     });
-
+    
 
     //获得openid，并赋值给user_id
     var that = this
@@ -54,6 +55,27 @@ Page({
       }
     });
 
+    //刷新最高价格
+    db.collection('counters').orderBy('price', 'desc').where({
+      _openid: this.data.openid
+    })
+      .get({
+        success: res => {
+          this.setData({
+            queryResult: JSON.stringify(res.data, null, 2)//把数据库返回对象转变为json字符串
+            // queryResult: JSON.parse(res.data)
+          })
+          // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
+          // console.log("new sort array-2222:", this.data.queryResult)
+        },
+        fail: err => {
+          wx.showToast({
+            icon: 'none',
+            title: '查询记录失败'
+          })
+          console.error('[数据库] [查询记录] 失败：', err)
+        }
+      });
 
 
   //   var that = this
@@ -201,7 +223,15 @@ Page({
     })
   },
 
+ 
+  // compare: function (property) {
+  //   return function (a, b) {
+  //     var value1 = a[property];
+  //     var value2 = b[property];
+  //     return value2 - value1;
+  //   }
 
+  // },
 
 
   resetreport: function() {
@@ -253,14 +283,82 @@ Page({
    
 
     //刷新最高价格
-    wx.cloud.callFunction({
-      name:'getHprice',
-      complete: res => {
-        console.log('callFunction getHprice result: ', res)
-      }
 
+    db.collection('counters').orderBy('price', 'desc').where({
+      _openid: this.data.openid
     })
+      .get({
+        success: res => {
+          this.setData({
+            // queryResult: JSON.parse(this.data.queryResult),//把json字符串，转变为二维数组
+            // price:this.data.queryResult[0]['price']
+            price: JSON.parse(this.data.queryResult)[0]['price']//把json字符串，转变为二维数组
+          })
+          // console.log("highest price:"+this.data.queryResult[0]['price'])
+          // console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
+          // console.log("new sort array-2222:", this.data.queryResult)
+          
+        },
+        fail: err => {
+          wx.showToast({
+            icon: 'none',
+            title: '查询记录失败'
+          })
+          console.error('[数据库] [查询记录] 失败：', err)
+        }
+      })
+      // .then(setprice)
+      
+    // this.setprice()  
 
+
+    // db.collection('counters').where({
+    //   _openid: this.data.openid
+    // }).get({
+    //   success: res => {
+    //     this.setData({
+    //       // queryResult: JSON.stringify(res.data, null, 2)
+    //       queryResult: this.data.queryResult.sort(this.compare("price"))
+    //     })
+    //     // console.log("new sort array:", queryResult)
+    //     console.log('[数据库] [查询记录] 成功2222222: ', res)//对得到的数组结果排序
+    //     // queryResult.sort(that.compare("price"))
+    //     console.log("new sort array-2222:",this.data.queryResult)
+    //   },
+    //   fail: err => {
+    //     wx.showToast({
+    //       icon: 'none',
+    //       title: '查询记录失败'
+    //     })
+    //     console.error('[数据库] [查询记录] 失败：', err)
+    //   }
+    // })
+    
+    
+    
+
+
+    //方法1 暂时行不通
+    // var priceresult=db.collection('counters').field({
+    //   description: true,
+    //   done: true,
+    //   progress: true
+    // })
+    //   .get()
+    //   .then(console.log)
+    //   .catch(console.error)
+    // console.log("priceresult:"+priceresult)
+    
+    //方法2，暂时行不通
+    // wx.cloud.callFunction({
+    //   name:'getHprice',
+    //   complete: res => {
+    //     console.log('callFunction getHprice result: ', res)
+    //   }
+
+    // })
+
+    //方法3，弃用
     // wx.request({
     //   url: 'http://118.25.214.51:8080/api/mprice',
     //   data: {
@@ -282,45 +380,45 @@ Page({
 
 
     //刷新最爱种类
-    wx.request({
-      url: 'http://118.25.214.51:8080/api/mtype',
-      data: {
-        user_id: this.data.user_id,
-        bdate: this.data.startdate,
-        edate: this.data.enddate
-      },
-      success: function (result) {
-        //console.log(result.data.count);
-        var data = result.data;
-        //console.log(data);
-        that.setData({
-          faverate: data.type,
-          faverate_times: data.count
-        })
+    // wx.request({
+    //   url: 'http://118.25.214.51:8080/api/mtype',
+    //   data: {
+    //     user_id: this.data.user_id,
+    //     bdate: this.data.startdate,
+    //     edate: this.data.enddate
+    //   },
+    //   success: function (result) {
+    //     //console.log(result.data.count);
+    //     var data = result.data;
+    //     //console.log(data);
+    //     that.setData({
+    //       faverate: data.type,
+    //       faverate_times: data.count
+    //     })
 
-      }
-    })
+    //   }
+    // })
 
 
     //刷新最晚时间
-    wx.request({
-      url: 'http://118.25.214.51:8080/api/mdate',
-      data: {
-        user_id: this.data.user_id,
-        bdate: this.data.startdate,
-        edate: this.data.enddate
-      },
-      success: function (result) {
-        //console.log(result.data.count);
-        var data = result.data;
-        //console.log(data);
-        that.setData({
-          late_date: data.date,
-          late_time: data.time
-        })
+    // wx.request({
+    //   url: 'http://118.25.214.51:8080/api/mdate',
+    //   data: {
+    //     user_id: this.data.user_id,
+    //     bdate: this.data.startdate,
+    //     edate: this.data.enddate
+    //   },
+    //   success: function (result) {
+    //     //console.log(result.data.count);
+    //     var data = result.data;
+    //     //console.log(data);
+    //     that.setData({
+    //       late_date: data.date,
+    //       late_time: data.time
+    //     })
 
-      }
-    }),
+    //   }
+    // }),
     
 
       wx.showToast({
@@ -333,6 +431,12 @@ Page({
 
   
 
+  setprice:function(){
+    this.setData({
+      price: this.data.queryResult[0]['price']
+    })
+    console.log("highest price:" + this.data.queryResult[0]['price'])
+  },
 
 
   share: function() {
