@@ -190,12 +190,13 @@ Page({
     })
    // console.log(this.data.mtype)
   },
-  // formSubmit: function (e) {
-  //   //console.log('form发生了submit事件，携带数据为：', e.detail.value)
-  //   this.setData({
-  //     totalprice:e.detail.value.input,
-  //     mtype:this.data.array[this.data.index]
-  //   })
+  formSubmit: function (e) {
+    //console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    this.setData({
+      totalprice:e.detail.value.input,
+      mtype:this.data.array[this.data.index]
+    })
+  },
   //   //console.log(this.data.totalprice)
   //   //console.log(this.data.mtype)
   //   console.log(this.data.user_id)
