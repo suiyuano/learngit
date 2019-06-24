@@ -269,18 +269,41 @@ Page({
   type_sort:function (){
     // for in 遍历需要两个形参 ，index表示数组的下标(可以自定义)，arr表示要遍历的数组
     for(var index in this.data.queryFood){
-      var countnum = db.collection('counters').where({
+      console.log('index:'+index)
+      db.collection('counters').where({
         _openid: this.data.openid, // 填入当前用户 openid
-        type: index
-      }).count({
-        success: function (res) {
-          console.log(res.total)
-        }
+        type: this.data.queryFood[index]
+      }).count().then(res => {
+        // success: function (res) {
+        //   console.log('type_sort result:'+res.total)
+        //   // this.data.queryCount.push(res.total);
+        //   this.data.queryCount[index]=res.total
+        // }
+        
+          if (res.total != 0) {
+            console.log('type_sort result:' + res.total)
+            this.data.queryCount.push(res.total)
+          }
+          else {
+            console.log('type_sort result:' + 0)
+            this.data.queryCount[index] = 0
+          }
+
+          // console.log('type_sort result:' + 0)
+          // this.data.queryCount[index] = 0
+        
       })
-      var obj = {};
-      obj.name = index;
-      obj.value =countnum;
-      this.data.queryCount.push(obj);
+      // if( this.data.queryCount[index]==0){
+      //   console.log('type_sort result:' + 1)
+      //   this.data.queryCount[index]=1
+      // }
+      // var obj = {};
+      // var element={};
+      // obj.this.data.queryFood[index] = countnum;
+      // obj.value =countnum;
+      // console.log('obj:'+obj)
+      // this.data.queryCount.push(res.total);
+      console.log('current_queryCount:' + JSON.stringify(this.data.queryCount, null, 2))
       }
 		},
 
@@ -443,8 +466,8 @@ Page({
 
     //刷新最爱种类
     this.setData({
-      faverate_times:this.data.queryCount.sort(this.compare('value'))[0]['value'],
-      faverate: this.data.queryCount.sort(this.compare('name'))[0]['name']
+      faverate_times:this.data.queryCount.sort(this.compare('value'))[0],
+      // faverate: this.data.queryCount.sort(this.compare('name'))[0]
     })
     // db.collection('counters').where({
     //   _openid: this.data.openid, // 填入当前用户 openid
