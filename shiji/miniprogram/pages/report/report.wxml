@@ -1,6 +1,6 @@
 
 <view style='height:100%' >
-  <view style='background-image:url({{URL}})' class='background' >
+  <view style='background-image:url({{URL}}); height:910rpx ' class='background'  >
     <view class='content'>
       <view class='block'>
         <text>这段时间里</text>
