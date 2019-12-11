@@ -64,6 +64,10 @@
 							</c:forEach>
 					        </tbody>
 				    </table>
+
+					<button class="btn btn-default  btn-info" style="float:bottom" onClick="calculate()">计算均分</button>
+					<h2 style="float: bottom"><p id="showgpa"></p></h2>
+
 				    <div class="panel-footer">
 						<c:if test="${pagingVO != null}">
 							<nav style="text-align: center">
@@ -123,5 +127,39 @@
         $("#sub").click(function () {
             $("#form1").submit();
         });
+
+		function calculate(){
+			// var gpa=0;
+			var sumgrade=0;
+			var sumflag=0;
+			var item = '';
+			// var coursearray=new Array();
+			<%--var coursearray="${selectedCourseList}";--%>
+			<%--for ( var i=0;i<${selectedCourseList}.length;i++)--%>
+
+			<%--{--%>
+			<%--	sumgrade="${selectedCourseList}"[i].couseCustom.score*"${selectedCourseList}"[i].mark+sumgrade;--%>
+			<%--	sumflag="${selectedCourseList}"[i].couseCustom.score+sumflag;--%>
+			<%--}--%>
+
+			<c:forEach  items="${selectedCourseList}" var="item">
+
+				<c:if test="${item.over}">
+				// console.log("test if can console");
+				// console.log("item.score:"+item.couseCustom.score);
+				item = '${item}';
+				sumgrade=${item.couseCustom.score}*${item.mark}+sumgrade;
+				sumflag=${item.couseCustom.score}+sumflag;
+
+			<%--<td>${item.couseCustom.score}</td>--%>
+			<%--<td style="color: red">${item.mark}</td>--%>
+
+			</c:if>
+			</c:forEach>
+		    var gpa=sumgrade/sumflag;
+
+			document.getElementById("showgpa").innerHTML="您的加权平均分为："+gpa.toString();
+		}
+
 	</script>
 </html>

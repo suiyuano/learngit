@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acf2eb3d-9b91-4591-b103-08e1aa224a12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../fitness-program/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../fitness-program/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fitness-program/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../fitness-program/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../food-program/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../food-program/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../food-program/pages/report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../food-program/pages/report/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../food-program/pages/report/report.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../food-program/pages/report/report.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../food-program/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../food-program/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/complex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../book-monitory/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/overCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/overCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/showCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/showCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examination_System-master/Examination_System-master/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../book-monitory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../book-monitory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c-compiler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../c-compiler/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,10 +22,11 @@
     <session id="2118410912">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/complex.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="836">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -170,7 +169,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14343163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -203,7 +202,7 @@
     <entry file="file://$PROJECT_DIR$/complex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>

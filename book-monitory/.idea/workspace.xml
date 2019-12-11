@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4d99a7b-8ff5-49b6-bd10-d2551f344871" name="Default Changelist" comment="" />
+    <list default="true" id="b4d99a7b-8ff5-49b6-bd10-d2551f344871" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/overCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/overCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/showCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/WEB-INF/jsp/student/showCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Examination_System-master/Examination_System-master/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-compiler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../c-compiler/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/book_monitory$app.coverage" NAME="app Coverage Results" MODIFIED="1545123405689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/book_monitory$app.coverage" NAME="app Coverage Results" MODIFIED="1562420309981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/book_monitory$current_time.coverage" NAME="current_time Coverage Results" MODIFIED="1545061393384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -80,16 +87,36 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-548373681">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="book-monitory" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11765">
+            <state relative-caret-position="4895">
               <caret line="933" column="53" selection-start-line="933" selection-start-column="53" selection-end-line="933" selection-end-column="53" />
               <folding>
                 <element signature="e#1373#1424#0" />
@@ -108,15 +135,6 @@
                 <marker date="1545071553907" expanded="true" signature="41201:43693" ph="..." />
                 <marker date="1545071553907" expanded="true" signature="43704:44137" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/outdate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -142,8 +160,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/refer_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state relative-caret-position="-896">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/common/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -151,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/return.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1235">
-              <caret line="65" column="9" selection-start-line="60" selection-start-column="4" selection-end-line="65" selection-end-column="9" />
+            <state relative-caret-position="1273">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -178,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/change_bookinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" column="9" selection-start-line="72" selection-start-column="4" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="1071">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -193,6 +229,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -241,6 +280,7 @@
     <option name="width" value="1440" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -257,12 +297,13 @@
             <path>
               <item name="book-monitory" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-monitory" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-monitory" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-monitory" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -383,12 +424,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992928" visible="true" weight="0.16152816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992928" visible="true" weight="0.16554959" />
       <window_info id="Structure" order="1" sideWeight="0.5007072" side_tool="true" weight="0.14142092" />
       <window_info id="Favorites" order="2" sideWeight="0.5007072" side_tool="true" weight="0.14142092" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.39745402" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.04107649" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -433,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html" />
-    <entry file="file://$PROJECT_DIR$/templates/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/common/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -540,41 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_book.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11765">
-          <caret line="933" column="53" selection-start-line="933" selection-start-column="53" selection-end-line="933" selection-end-column="53" />
-          <folding>
-            <element signature="e#1373#1424#0" />
-            <element signature="e#13783#13836#0" />
-            <marker date="1545071553907" expanded="true" signature="6329:6721" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="7403:8201" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="8229:10381" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="8516:10381" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="9421:10100" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="10128:10381" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="10255:10381" ph="..." />
-            <marker date="1545071553907" expanded="false" signature="10414:10419" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="27617:28687" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="38238:39025" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="39815:40340" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="41201:43693" ph="..." />
-            <marker date="1545071553907" expanded="true" signature="43704:44137" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,17 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/refer_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/return.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="65" column="9" selection-start-line="60" selection-start-column="4" selection-end-line="65" selection-end-column="9" />
+        <state relative-caret-position="1273">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
@@ -629,8 +625,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/change_bookinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="9" selection-start-line="72" selection-start-column="4" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="1071">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4895">
+          <caret line="933" column="53" selection-start-line="933" selection-start-column="53" selection-end-line="933" selection-end-column="53" />
+          <folding>
+            <element signature="e#1373#1424#0" />
+            <element signature="e#13783#13836#0" />
+            <marker date="1545071553907" expanded="true" signature="6329:6721" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="7403:8201" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="8229:10381" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="8516:10381" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="9421:10100" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="10128:10381" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="10255:10381" ph="..." />
+            <marker date="1545071553907" expanded="false" signature="10414:10419" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="27617:28687" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="38238:39025" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="39815:40340" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="41201:43693" ph="..." />
+            <marker date="1545071553907" expanded="true" signature="43704:44137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/refer_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-896">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>

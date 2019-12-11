@@ -64,6 +64,7 @@
 									<td>${item.coursetype}</td>
 									<td>${item.score}</td>
 									<td>
+<%--										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/student/stuSelectedCourse?id=${item.courseid}'">选课</button>--%>
 										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/student/stuSelectedCourse?id=${item.courseid}'">选课</button>
 										<!--弹出框-->
 									</td>
