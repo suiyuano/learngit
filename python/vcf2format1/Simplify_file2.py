@@ -23,7 +23,7 @@ def main(argv):
             outputfile = arg
 
 
-    
+
     with open(inputfile) as fp1:
         list1 = fp1.readlines()
 
