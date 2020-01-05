@@ -11,9 +11,9 @@ def main(argv):
 
     try:
         # 这里的 h 就表示该选项无参数，i:表示 i 选项后需要有参数
-        opts, args = getopt.getopt(argv, "hi:o:", ["infile1=", "infile2=", "infile3=", "infile4=", "outfile="])
+        opts, args = getopt.getopt(argv, "ha:c:y:s:o:", ["infile1=", "infile2=", "infile3=", "infile4=", "outfile="])
     except getopt.GetoptError:
-        print('Error: test_arg.py -i1 <inputfile1> -i2 <inputfile2> -i3 <inputfile3> -i4 <inputfile4> -o <outputfile>')
+        print('Error: test_arg.py -a <inputfile1> -c <inputfile2> -y <inputfile3> -s <inputfile4> -o <outputfile>')
         sys.exit(2)
 
     for opt, arg in opts:
@@ -21,13 +21,13 @@ def main(argv):
             print('test_arg.py -i <inputfile> -o <outputfile>')
             print('or: test_arg.py --infile=<inputfile> --outfile=<outputfile>')
             sys.exit()
-        elif opt in ("-i1", "--infile1"):
+        elif opt in ("-a", "--infile1"):
             inputfile1 = arg
-        elif opt in ("-i2", "--infile2"):
+        elif opt in ("-c", "--infile2"):
             inputfile2 = arg
-        elif opt in ("-i3", "--infile3"):
+        elif opt in ("-y", "--infile3"):
             inputfile3 = arg
-        elif opt in ("-i4", "--infile4"):
+        elif opt in ("-s", "--infile4"):
             inputfile4 = arg
         elif opt in ("-o", "--outfile"):
             outputfile = arg
